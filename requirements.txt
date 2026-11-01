@@ -1,0 +1,26 @@
+# Appendix B.6 modelling versions
+#
+# These are the exact versions used to produce the results reported in the
+# thesis, pinned verbatim to Appendix B.6 and nothing else. This file is
+# deliberately NOT a `pip freeze`: it lists no transitive dependencies and no
+# package whose version the thesis does not state, because a version printed
+# here becomes a reproducibility claim.
+#
+# Python 3.13.12
+#
+# Packages imported by the extraction and crosswalk code, whose versions were
+# not recorded, are listed unpinned in requirements-extraction.txt.
+
+xgboost==3.3.0
+lightgbm==4.7.0
+scikit-learn==1.9.0
+shap==0.52.0
+numpy==2.5.1
+pandas==3.0.3
+
+# Attention-based candidate (Section 4.7, Appendix A). Evaluated under a
+# pre-registered model-selection gate and excluded from the study; the
+# versions are recorded because the gate run is part of the reported work.
+pytorch-forecasting==1.8.0
+torch==2.13.0
+lightning==2.6.5

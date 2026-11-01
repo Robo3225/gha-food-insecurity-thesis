@@ -1,0 +1,640 @@
+admin_code,FNID,ADMIN1,ADMIN2,ADMIN3,LZNAME
+3144.0,KE2016C330010024,baringo,baringo central,,western agropastoral zone
+3293.0,KE2016C330010020,baringo,baringo central,,western medium potential zone
+3145.0,KE2016C330020024,baringo,baringo north,,western agropastoral zone
+3146.0,KE2016C330030024,baringo,baringo south,,western agropastoral zone
+3294.0,KE2016C330030020,baringo,baringo south,,western medium potential zone
+3190.0,KE2016C330040021,baringo,eldama ravine,,western high potential zone
+3296.0,KE2016C330040020,baringo,eldama ravine,,western medium potential zone
+3306.0,KE2016C330050020,baringo,mogotio,,western medium potential zone
+3015.0,KE2016C330060001,baringo,tiaty,,northwestern pastoral zone
+3166.0,KE2016C330060024,baringo,tiaty,,western agropastoral zone
+3179.0,KE2016C336010021,bomet,bomet central,,western high potential zone
+3180.0,KE2016C336020021,bomet,bomet east,,western high potential zone
+3187.0,KE2016C336030021,bomet,chepalungu,,western high potential zone
+3213.0,KE2016C336040021,bomet,konoin,,western high potential zone
+3247.0,KE2016C336050021,bomet,sotik,,western high potential zone
+3183.0,KE2016C339010021,bungoma,bumula,,western high potential zone
+3197.0,KE2016C339020021,bungoma,kabuchai,,western high potential zone
+3198.0,KE2016C339030021,bungoma,kanduyi,,western high potential zone
+3206.0,KE2016C339040021,bungoma,kimilili,,western high potential zone
+3227.0,KE2016C339050021,bungoma,mt. elgon,,western high potential zone
+3308.0,KE2016C339050020,bungoma,mt. elgon,,western medium potential zone
+3246.0,KE2016C339060021,bungoma,sirisia,,western high potential zone
+3253.0,KE2016C339070021,bungoma,tongaren,,western high potential zone
+3255.0,KE2016C339080021,bungoma,webuye east,,western high potential zone
+3256.0,KE2016C339090021,bungoma,webuye west,,western high potential zone
+2839.0,KE2016C340010023,busia,budalangi,,lake victoria fishing zone
+3262.0,KE2016C340010022,busia,budalangi,,western lakeshore marginal mixed farming zone
+3186.0,KE2016C340020021,busia,butula,,western high potential zone
+3263.0,KE2016C340020022,busia,butula,,western lakeshore marginal mixed farming zone
+2840.0,KE2016C340030023,busia,funyula,,lake victoria fishing zone
+3264.0,KE2016C340030022,busia,funyula,,western lakeshore marginal mixed farming zone
+3222.0,KE2016C340040021,busia,matayos,,western high potential zone
+3274.0,KE2016C340040022,busia,matayos,,western lakeshore marginal mixed farming zone
+3231.0,KE2016C340050021,busia,nambale,,western high potential zone
+3250.0,KE2016C340060021,busia,teso north,,western high potential zone
+3251.0,KE2016C340070021,busia,teso south,,western high potential zone
+3151.0,KE2016C328010024,elgeyo marakwet,keiyo north,,western agropastoral zone
+3201.0,KE2016C328010021,elgeyo marakwet,keiyo north,,western high potential zone
+3301.0,KE2016C328010020,elgeyo marakwet,keiyo north,,western medium potential zone
+3202.0,KE2016C328020021,elgeyo marakwet,keiyo south,,western high potential zone
+3302.0,KE2016C328020020,elgeyo marakwet,keiyo south,,western medium potential zone
+3157.0,KE2016C328030024,elgeyo marakwet,marakwet east,,western agropastoral zone
+3304.0,KE2016C328030020,elgeyo marakwet,marakwet east,,western medium potential zone
+3158.0,KE2016C328040024,elgeyo marakwet,marakwet west,,western agropastoral zone
+3221.0,KE2016C328040021,elgeyo marakwet,marakwet west,,western high potential zone
+3305.0,KE2016C328040020,elgeyo marakwet,marakwet west,,western medium potential zone
+2717.0,KE2016C314010019,embu,manyatta,,"central highlands, high potential zone"
+3037.0,KE2016C314020016,embu,mbeere north,,southeastern marginal mixed farming zone
+2723.0,KE2016C314030019,embu,mbeere south,,"central highlands, high potential zone"
+3038.0,KE2016C314030016,embu,mbeere south,,southeastern marginal mixed farming zone
+2736.0,KE2016C314040019,embu,runyenjes,,"central highlands, high potential zone"
+2791.0,KE2016C307010110,garissa,balambala,balambala,eastern pastoral zone
+2801.0,KE2016C307010210,garissa,balambala,danyere,eastern pastoral zone
+2811.0,KE2016C307010310,garissa,balambala,jara jara,eastern pastoral zone
+2822.0,KE2016C307010410,garissa,balambala,saka,eastern pastoral zone
+2824.0,KE2016C307010510,garissa,balambala,sankuri,eastern pastoral zone
+2790.0,KE2016C307020110,garissa,dadaab,abakaile,eastern pastoral zone
+2798.0,KE2016C307020210,garissa,dadaab,dadaabu,eastern pastoral zone
+2800.0,KE2016C307020310,garissa,dadaab,damajale,eastern pastoral zone
+2802.0,KE2016C307020410,garissa,dadaab,dertu,eastern pastoral zone
+2815.0,KE2016C307020510,garissa,dadaab,labisgale,eastern pastoral zone
+2817.0,KE2016C307020610,garissa,dadaab,liboi,eastern pastoral zone
+3064.0,KE2016C307030111,garissa,fafi,bura,southeastern pastoral zone
+3067.0,KE2016C307030211,garissa,fafi,dekaharia,southeastern pastoral zone
+2804.0,KE2016C307030310,garissa,fafi,fafi,eastern pastoral zone
+3068.0,KE2016C307030311,garissa,fafi,fafi,southeastern pastoral zone
+2812.0,KE2016C307030410,garissa,fafi,jar jila,eastern pastoral zone
+3078.0,KE2016C307030411,garissa,fafi,jar jila,southeastern pastoral zone
+2820.0,KE2016C307030510,garissa,fafi,nanigh,eastern pastoral zone
+3087.0,KE2016C307030511,garissa,fafi,nanigh,southeastern pastoral zone
+2792.0,KE2016C307040110,garissa,garissa township,balambala,eastern pastoral zone
+2805.0,KE2016C307040210,garissa,garissa township,galbet,eastern pastoral zone
+2810.0,KE2016C307040310,garissa,garissa township,iftin,eastern pastoral zone
+2825.0,KE2016C307040410,garissa,garissa township,sankuri,eastern pastoral zone
+2827.0,KE2016C307040510,garissa,garissa township,waberi,eastern pastoral zone
+3076.0,KE2016C307050111,garissa,ijara,hulugho,southeastern pastoral zone
+3077.0,KE2016C307050211,garissa,ijara,ijara,southeastern pastoral zone
+3083.0,KE2016C307050311,garissa,ijara,kotile,southeastern pastoral zone
+3089.0,KE2016C307050411,garissa,ijara,sangailu,southeastern pastoral zone
+2793.0,KE2016C307060110,garissa,lagdera,baraki,eastern pastoral zone
+2794.0,KE2016C307060210,garissa,lagdera,benane(garissa),eastern pastoral zone
+2807.0,KE2016C307060310,garissa,lagdera,goreale,eastern pastoral zone
+2818.0,KE2016C307060410,garissa,lagdera,maalamini,eastern pastoral zone
+2819.0,KE2016C307060510,garissa,lagdera,modogashe,eastern pastoral zone
+2821.0,KE2016C307060610,garissa,lagdera,sabena,eastern pastoral zone
+2841.0,KE2016C343010023,homa bay,homa bay town,,lake victoria fishing zone
+3267.0,KE2016C343010022,homa bay,homa bay town,,western lakeshore marginal mixed farming zone
+3196.0,KE2016C343020021,homa bay,kabondo kasipul,,western high potential zone
+3268.0,KE2016C343020022,homa bay,kabondo kasipul,,western lakeshore marginal mixed farming zone
+2842.0,KE2016C343030023,homa bay,karachuonyo,,lake victoria fishing zone
+3269.0,KE2016C343030022,homa bay,karachuonyo,,western lakeshore marginal mixed farming zone
+3200.0,KE2016C343040021,homa bay,kasipul,,western high potential zone
+3270.0,KE2016C343040022,homa bay,kasipul,,western lakeshore marginal mixed farming zone
+2846.0,KE2016C343050023,homa bay,mbita,,lake victoria fishing zone
+3275.0,KE2016C343050022,homa bay,mbita,,western lakeshore marginal mixed farming zone
+3277.0,KE2016C343060022,homa bay,ndhiwa,,western lakeshore marginal mixed farming zone
+2850.0,KE2016C343070023,homa bay,rangwe,,lake victoria fishing zone
+3281.0,KE2016C343070022,homa bay,rangwe,,western lakeshore marginal mixed farming zone
+2853.0,KE2016C343080023,homa bay,suba,,lake victoria fishing zone
+3285.0,KE2016C343080022,homa bay,suba,,western lakeshore marginal mixed farming zone
+2944.0,KE2016C311010105,isiolo,isiolo north,burat,northern pastoral zone
+2897.0,KE2016C311010209,isiolo,isiolo north,chari,northeastern pastoral zone
+2946.0,KE2016C311010205,isiolo,isiolo north,chari,northern pastoral zone
+2898.0,KE2016C311010309,isiolo,isiolo north,cherab,northeastern pastoral zone
+2947.0,KE2016C311010305,isiolo,isiolo north,cherab,northern pastoral zone
+2963.0,KE2016C311010405,isiolo,isiolo north,ngare mara,northern pastoral zone
+2967.0,KE2016C311010505,isiolo,isiolo north,oldo nyiro,northern pastoral zone
+3161.0,KE2016C311010524,isiolo,isiolo north,oldo nyiro,western agropastoral zone
+2806.0,KE2016C311020110,isiolo,isiolo south,garba tulla,eastern pastoral zone
+2909.0,KE2016C311020109,isiolo,isiolo south,garba tulla,northeastern pastoral zone
+3019.0,KE2016C311020116,isiolo,isiolo south,garba tulla,southeastern marginal mixed farming zone
+3126.0,KE2016C311020114,isiolo,isiolo south,garba tulla,tana riverine zone
+2814.0,KE2016C311020210,isiolo,isiolo south,kinna,eastern pastoral zone
+2918.0,KE2016C311020209,isiolo,isiolo south,kinna,northeastern pastoral zone
+2954.0,KE2016C311020205,isiolo,isiolo south,kinna,northern pastoral zone
+3027.0,KE2016C311020216,isiolo,isiolo south,kinna,southeastern marginal mixed farming zone
+3131.0,KE2016C311020214,isiolo,isiolo south,kinna,tana riverine zone
+2826.0,KE2016C311020310,isiolo,isiolo south,sericho,eastern pastoral zone
+2933.0,KE2016C311020309,isiolo,isiolo south,sericho,northeastern pastoral zone
+3110.0,KE2016C334010015,kajiado,kajiado central,,southern pastoral zone
+3023.0,KE2016C334020016,kajiado,kajiado east,,southeastern marginal mixed farming zone
+3093.0,KE2016C334020018,kajiado,kajiado east,,southern agropastoral zone
+3111.0,KE2016C334020015,kajiado,kajiado east,,southern pastoral zone
+3094.0,KE2016C334030018,kajiado,kajiado north,,southern agropastoral zone
+2749.0,KE2016C334040013,kajiado,kajiado south,,coastal marginal agricultural mixed farming zone
+3112.0,KE2016C334040015,kajiado,kajiado south,,southern pastoral zone
+3095.0,KE2016C334050018,kajiado,kajiado west,,southern agropastoral zone
+3113.0,KE2016C334050015,kajiado,kajiado west,,southern pastoral zone
+3185.0,KE2016C337010021,kakamega,butere,,western high potential zone
+3195.0,KE2016C337020021,kakamega,ikolomani,,western high potential zone
+3204.0,KE2016C337030021,kakamega,khwisero,,western high potential zone
+3217.0,KE2016C337040021,kakamega,likuyani,,western high potential zone
+3218.0,KE2016C337050021,kakamega,lugari,,western high potential zone
+3219.0,KE2016C337060021,kakamega,lurambi,,western high potential zone
+3220.0,KE2016C337070021,kakamega,malava,,western high potential zone
+3223.0,KE2016C337080021,kakamega,matungu,,western high potential zone
+3229.0,KE2016C337090021,kakamega,mumias east,,western high potential zone
+3230.0,KE2016C337100021,kakamega,mumias west,,western high potential zone
+3236.0,KE2016C337110021,kakamega,navakholo,,western high potential zone
+3244.0,KE2016C337120021,kakamega,shinyalu,,western high potential zone
+3172.0,KE2016C335010021,kericho,ainamoi,,western high potential zone
+3175.0,KE2016C335020021,kericho,belgut,,western high potential zone
+3184.0,KE2016C335030021,kericho,bureti,,western high potential zone
+3208.0,KE2016C335040021,kericho,kipkelion east,,western high potential zone
+3209.0,KE2016C335050021,kericho,kipkelion west,,western high potential zone
+3245.0,KE2016C335060021,kericho,sigowet soin,,western high potential zone
+2690.0,KE2016C322010019,kiambu,gatundu north,,"central highlands, high potential zone"
+2691.0,KE2016C322020019,kiambu,gatundu south,,"central highlands, high potential zone"
+2693.0,KE2016C322030019,kiambu,githunguri,,"central highlands, high potential zone"
+2694.0,KE2016C322040019,kiambu,juja,,"central highlands, high potential zone"
+3049.0,KE2016C322040017,kiambu,juja,,"southeastern medium potential, mixed farming zone"
+2695.0,KE2016C322050019,kiambu,kabete,,"central highlands, high potential zone"
+2700.0,KE2016C322060019,kiambu,kiambaa,,"central highlands, high potential zone"
+2701.0,KE2016C322070019,kiambu,kiambu,,"central highlands, high potential zone"
+2706.0,KE2016C322080019,kiambu,kikuyu,,"central highlands, high potential zone"
+3096.0,KE2016C322080018,kiambu,kikuyu,,southern agropastoral zone
+2713.0,KE2016C322090019,kiambu,lari,,"central highlands, high potential zone"
+2714.0,KE2016C322100019,kiambu,limuru,,"central highlands, high potential zone"
+3101.0,KE2016C322100018,kiambu,limuru,,southern agropastoral zone
+2735.0,KE2016C322110019,kiambu,ruiru,,"central highlands, high potential zone"
+3061.0,KE2016C322110017,kiambu,ruiru,,"southeastern medium potential, mixed farming zone"
+2740.0,KE2016C322120019,kiambu,thika town,,"central highlands, high potential zone"
+2745.0,KE2016C303010013,kilifi,ganze,,coastal marginal agricultural mixed farming zone
+2750.0,KE2016C303020013,kilifi,kaloleni,,coastal marginal agricultural mixed farming zone
+2752.0,KE2016C303030013,kilifi,kilifi north,,coastal marginal agricultural mixed farming zone
+2772.0,KE2016C303030012,kilifi,kilifi north,,coastal medium potential farming zone
+2753.0,KE2016C303040013,kilifi,kilifi south,,coastal marginal agricultural mixed farming zone
+2773.0,KE2016C303040012,kilifi,kilifi south,,coastal medium potential farming zone
+2758.0,KE2016C303050013,kilifi,magarini,,coastal marginal agricultural mixed farming zone
+2781.0,KE2016C303050012,kilifi,magarini,,coastal medium potential farming zone
+2759.0,KE2016C303060013,kilifi,malindi,,coastal marginal agricultural mixed farming zone
+2782.0,KE2016C303060012,kilifi,malindi,,coastal medium potential farming zone
+2763.0,KE2016C303070013,kilifi,rabai,,coastal marginal agricultural mixed farming zone
+2788.0,KE2016C303070012,kilifi,rabai,,coastal medium potential farming zone
+2692.0,KE2016C320010019,kirinyaga,gichugu,,"central highlands, high potential zone"
+2709.0,KE2016C320020019,kirinyaga,kirinyaga central,,"central highlands, high potential zone"
+2725.0,KE2016C320030019,kirinyaga,mwea,,"central highlands, high potential zone"
+2727.0,KE2016C320040019,kirinyaga,ndia,,"central highlands, high potential zone"
+3176.0,KE2016C345010021,kisii,bobasi,,western high potential zone
+3177.0,KE2016C345020021,kisii,bomachoge borabu,,western high potential zone
+3178.0,KE2016C345030021,kisii,bomachoge chache,,western high potential zone
+3181.0,KE2016C345040021,kisii,bonchari,,western high potential zone
+3210.0,KE2016C345050021,kisii,kitutu chache north,,western high potential zone
+3211.0,KE2016C345060021,kisii,kitutu chache south,,western high potential zone
+3239.0,KE2016C345070021,kisii,nyaribari chache,,western high potential zone
+3240.0,KE2016C345080021,kisii,nyaribari masaba,,western high potential zone
+3248.0,KE2016C345090021,kisii,south mugirango,,western high potential zone
+2843.0,KE2016C342010023,kisumu,kisumu central,,lake victoria fishing zone
+2844.0,KE2016C342020023,kisumu,kisumu east,,lake victoria fishing zone
+3271.0,KE2016C342020022,kisumu,kisumu east,,western lakeshore marginal mixed farming zone
+2845.0,KE2016C342030023,kisumu,kisumu west,,lake victoria fishing zone
+3272.0,KE2016C342030022,kisumu,kisumu west,,western lakeshore marginal mixed farming zone
+3228.0,KE2016C342040021,kisumu,muhoroni,,western high potential zone
+3276.0,KE2016C342040022,kisumu,muhoroni,,western lakeshore marginal mixed farming zone
+2847.0,KE2016C342050023,kisumu,nyakach,,lake victoria fishing zone
+3278.0,KE2016C342050022,kisumu,nyakach,,western lakeshore marginal mixed farming zone
+2848.0,KE2016C342060023,kisumu,nyando,,lake victoria fishing zone
+3238.0,KE2016C342060021,kisumu,nyando,,western high potential zone
+3279.0,KE2016C342060022,kisumu,nyando,,western lakeshore marginal mixed farming zone
+2852.0,KE2016C342070023,kisumu,seme,,lake victoria fishing zone
+3284.0,KE2016C342070022,kisumu,seme,,western lakeshore marginal mixed farming zone
+3028.0,KE2016C315010016,kitui,kitui central,,southeastern marginal mixed farming zone
+3029.0,KE2016C315020016,kitui,kitui east,,southeastern marginal mixed farming zone
+3030.0,KE2016C315030016,kitui,kitui rural,,southeastern marginal mixed farming zone
+2756.0,KE2016C315040013,kitui,kitui south,,coastal marginal agricultural mixed farming zone
+3031.0,KE2016C315040016,kitui,kitui south,,southeastern marginal mixed farming zone
+3032.0,KE2016C315050016,kitui,kitui west,,southeastern marginal mixed farming zone
+3041.0,KE2016C315060016,kitui,mwingi central,,southeastern marginal mixed farming zone
+3042.0,KE2016C315070016,kitui,mwingi north,,southeastern marginal mixed farming zone
+3043.0,KE2016C315080016,kitui,mwingi west,,southeastern marginal mixed farming zone
+2754.0,KE2016C302010013,kwale,kinango,,coastal marginal agricultural mixed farming zone
+2774.0,KE2016C302010012,kwale,kinango,,coastal medium potential farming zone
+2757.0,KE2016C302020013,kwale,lunga lunga,,coastal marginal agricultural mixed farming zone
+2780.0,KE2016C302020012,kwale,lunga lunga,,coastal medium potential farming zone
+2760.0,KE2016C302030013,kwale,matuga,,coastal marginal agricultural mixed farming zone
+2783.0,KE2016C302030012,kwale,matuga,,coastal medium potential farming zone
+2761.0,KE2016C302040013,kwale,msambweni,,coastal marginal agricultural mixed farming zone
+2785.0,KE2016C302040012,kwale,msambweni,,coastal medium potential farming zone
+2710.0,KE2016C331010019,laikipia,laikipia east,,"central highlands, high potential zone"
+3152.0,KE2016C331010024,laikipia,laikipia east,,western agropastoral zone
+3153.0,KE2016C331020024,laikipia,laikipia north,,western agropastoral zone
+2711.0,KE2016C331030019,laikipia,laikipia west,,"central highlands, high potential zone"
+3154.0,KE2016C331030024,laikipia,laikipia west,,western agropastoral zone
+2744.0,KE2016C305010113,lamu,lamu east,basuba,coastal marginal agricultural mixed farming zone
+2767.0,KE2016C305010112,lamu,lamu east,basuba,coastal medium potential farming zone
+3062.0,KE2016C305010111,lamu,lamu east,basuba,southeastern pastoral zone
+2770.0,KE2016C305010212,lamu,lamu east,hulugho,coastal medium potential farming zone
+2778.0,KE2016C305010312,lamu,lamu east,kiunga,coastal medium potential farming zone
+3082.0,KE2016C305010311,lamu,lamu east,kiunga,southeastern pastoral zone
+2748.0,KE2016C305020113,lamu,lamu west,hindi,coastal marginal agricultural mixed farming zone
+2769.0,KE2016C305020112,lamu,lamu west,hindi,coastal medium potential farming zone
+3074.0,KE2016C305020111,lamu,lamu west,hindi,southeastern pastoral zone
+2784.0,KE2016C305020212,lamu,lamu west,mkunumbi,coastal medium potential farming zone
+3086.0,KE2016C305020211,lamu,lamu west,mkunumbi,southeastern pastoral zone
+2789.0,KE2016C305020312,lamu,lamu west,witu,coastal medium potential farming zone
+3091.0,KE2016C305020311,lamu,lamu west,witu,southeastern pastoral zone
+3051.0,KE2016C316010017,machakos,kangundo,,"southeastern medium potential, mixed farming zone"
+3053.0,KE2016C316020017,machakos,kathiani,,"southeastern medium potential, mixed farming zone"
+3034.0,KE2016C316030016,machakos,machakos town,,southeastern marginal mixed farming zone
+3055.0,KE2016C316030017,machakos,machakos town,,"southeastern medium potential, mixed farming zone"
+2719.0,KE2016C316040019,machakos,masinga,,"central highlands, high potential zone"
+3036.0,KE2016C316040016,machakos,masinga,,southeastern marginal mixed farming zone
+3057.0,KE2016C316050017,machakos,matungulu,,"southeastern medium potential, mixed farming zone"
+3058.0,KE2016C316060017,machakos,mavoko,,"southeastern medium potential, mixed farming zone"
+3102.0,KE2016C316060018,machakos,mavoko,,southern agropastoral zone
+3040.0,KE2016C316070016,machakos,mwala,,southeastern marginal mixed farming zone
+3060.0,KE2016C316070017,machakos,mwala,,"southeastern medium potential, mixed farming zone"
+3048.0,KE2016C316080016,machakos,yatta,,southeastern marginal mixed farming zone
+3050.0,KE2016C317010017,makueni,kaiti,,"southeastern medium potential, mixed farming zone"
+2751.0,KE2016C317020013,makueni,kibwezi east,,coastal marginal agricultural mixed farming zone
+3024.0,KE2016C317020016,makueni,kibwezi east,,southeastern marginal mixed farming zone
+3114.0,KE2016C317020015,makueni,kibwezi east,,southern pastoral zone
+3025.0,KE2016C317030016,makueni,kibwezi west,,southeastern marginal mixed farming zone
+3115.0,KE2016C317030015,makueni,kibwezi west,,southern pastoral zone
+3026.0,KE2016C317040016,makueni,kilome,,southeastern marginal mixed farming zone
+3054.0,KE2016C317040017,makueni,kilome,,"southeastern medium potential, mixed farming zone"
+3035.0,KE2016C317050016,makueni,makueni,,southeastern marginal mixed farming zone
+3056.0,KE2016C317050017,makueni,makueni,,"southeastern medium potential, mixed farming zone"
+3039.0,KE2016C317060016,makueni,mbooni,,southeastern marginal mixed farming zone
+3059.0,KE2016C317060017,makueni,mbooni,,"southeastern medium potential, mixed farming zone"
+2892.0,KE2016C309010109,mandera,banissa,banissa,northeastern pastoral zone
+2901.0,KE2016C309010209,mandera,banissa,derkale,northeastern pastoral zone
+2911.0,KE2016C309010309,mandera,banissa,guba,northeastern pastoral zone
+2917.0,KE2016C309010409,mandera,banissa,kiliwehiri,northeastern pastoral zone
+2927.0,KE2016C309010509,mandera,banissa,malkamari,northeastern pastoral zone
+2929.0,KE2016C309010609,mandera,banissa,rhamu dimtu,northeastern pastoral zone
+2885.0,KE2016C309020109,mandera,lafey,alango gof,northeastern pastoral zone
+2886.0,KE2016C309020209,mandera,lafey,arabia,northeastern pastoral zone
+2907.0,KE2016C309020309,mandera,lafey,fino,northeastern pastoral zone
+2855.0,KE2016C309020408,mandera,lafey,khalalio,mandera riverine zone
+2921.0,KE2016C309020509,mandera,lafey,lafey,northeastern pastoral zone
+2857.0,KE2016C309020608,mandera,lafey,libehia,mandera riverine zone
+2926.0,KE2016C309020609,mandera,lafey,libehia,northeastern pastoral zone
+2940.0,KE2016C309020709,mandera,lafey,waranqara,northeastern pastoral zone
+2887.0,KE2016C309030109,mandera,mandera east,arabia,northeastern pastoral zone
+2854.0,KE2016C309030208,mandera,mandera east,bulla mpya,mandera riverine zone
+2895.0,KE2016C309030209,mandera,mandera east,bulla mpya,northeastern pastoral zone
+2856.0,KE2016C309030308,mandera,mandera east,khalalio,mandera riverine zone
+2915.0,KE2016C309030309,mandera,mandera east,khalalio,northeastern pastoral zone
+2858.0,KE2016C309030408,mandera,mandera east,neboi,mandera riverine zone
+2861.0,KE2016C309030508,mandera,mandera east,township,mandera riverine zone
+2890.0,KE2016C309040109,mandera,mandera north,as habito,northeastern pastoral zone
+2912.0,KE2016C309040209,mandera,mandera north,guticha,northeastern pastoral zone
+2928.0,KE2016C309040309,mandera,mandera north,marothile,northeastern pastoral zone
+2860.0,KE2016C309040408,mandera,mandera north,rhamu,mandera riverine zone
+2931.0,KE2016C309040409,mandera,mandera north,rhamu,northeastern pastoral zone
+2859.0,KE2016C309040508,mandera,mandera north,rhamu dimtu,mandera riverine zone
+2930.0,KE2016C309040509,mandera,mandera north,rhamu dimtu,northeastern pastoral zone
+2891.0,KE2016C309050109,mandera,mandera south,as habito,northeastern pastoral zone
+2905.0,KE2016C309050209,mandera,mandera south,el wak north,northeastern pastoral zone
+2906.0,KE2016C309050309,mandera,mandera south,el wak south,northeastern pastoral zone
+2920.0,KE2016C309050409,mandera,mandera south,kutulo,northeastern pastoral zone
+2934.0,KE2016C309050509,mandera,mandera south,shimbir fatuma,northeastern pastoral zone
+2941.0,KE2016C309050609,mandera,mandera south,wargadud,northeastern pastoral zone
+2869.0,KE2016C309060107,mandera,mandera west,dandu,northeastern agropastoral zone
+2872.0,KE2016C309060207,mandera,mandera west,gither,northeastern agropastoral zone
+2910.0,KE2016C309060209,mandera,mandera west,gither,northeastern pastoral zone
+2923.0,KE2016C309060309,mandera,mandera west,lag sure,northeastern pastoral zone
+2935.0,KE2016C309060409,mandera,mandera west,takaba,northeastern pastoral zone
+2883.0,KE2016C309060507,mandera,mandera west,takaba south,northeastern agropastoral zone
+2936.0,KE2016C309060509,mandera,mandera west,takaba south,northeastern pastoral zone
+2953.0,KE2016C310010105,marsabit,laisamis,kargi south horr,northern pastoral zone
+2955.0,KE2016C310010205,marsabit,laisamis,korr ngurunit,northern pastoral zone
+2956.0,KE2016C310010305,marsabit,laisamis,laisamis,northern pastoral zone
+2957.0,KE2016C310010405,marsabit,laisamis,logo logo,northern pastoral zone
+2835.0,KE2016C310010504,marsabit,laisamis,loiyangalani,lake turkana fishing
+2958.0,KE2016C310010505,marsabit,laisamis,loiyangalani,northern pastoral zone
+2867.0,KE2016C310020107,marsabit,moyale,butiye,northeastern agropastoral zone
+2945.0,KE2016C310020105,marsabit,moyale,butiye,northern pastoral zone
+2874.0,KE2016C310020207,marsabit,moyale,golbo,northeastern agropastoral zone
+2950.0,KE2016C310020205,marsabit,moyale,golbo,northern pastoral zone
+2876.0,KE2016C310020307,marsabit,moyale,heillu manyatta,northeastern agropastoral zone
+2881.0,KE2016C310020407,marsabit,moyale,moyale township,northeastern agropastoral zone
+2882.0,KE2016C310020507,marsabit,moyale,obbu,northeastern agropastoral zone
+2966.0,KE2016C310020505,marsabit,moyale,obbu,northern pastoral zone
+2969.0,KE2016C310020605,marsabit,moyale,sololo,northern pastoral zone
+2972.0,KE2016C310020705,marsabit,moyale,uran,northern pastoral zone
+2948.0,KE2016C310030105,marsabit,north horr,dukana,northern pastoral zone
+2828.0,KE2016C310030204,marsabit,north horr,illeret,lake turkana fishing
+2951.0,KE2016C310030205,marsabit,north horr,illeret,northern pastoral zone
+2959.0,KE2016C310030305,marsabit,north horr,maikona,northern pastoral zone
+2836.0,KE2016C310030404,marsabit,north horr,north horr,lake turkana fishing
+2964.0,KE2016C310030405,marsabit,north horr,north horr,northern pastoral zone
+2971.0,KE2016C310030505,marsabit,north horr,turbi,northern pastoral zone
+2862.0,KE2016C310040106,marsabit,saku,karare,marsabit marginal mixed farming zone
+2952.0,KE2016C310040105,marsabit,saku,karare,northern pastoral zone
+2863.0,KE2016C310040206,marsabit,saku,marsabit central,marsabit marginal mixed farming zone
+2960.0,KE2016C310040205,marsabit,saku,marsabit central,northern pastoral zone
+2864.0,KE2016C310040306,marsabit,saku,sagante jaldessa,marsabit marginal mixed farming zone
+2968.0,KE2016C310040305,marsabit,saku,sagante jaldessa,northern pastoral zone
+2679.0,KE2016C312010019,meru,buuri,,"central highlands, high potential zone"
+2680.0,KE2016C312020019,meru,central imenti,,"central highlands, high potential zone"
+3017.0,KE2016C312020016,meru,central imenti,,southeastern marginal mixed farming zone
+3020.0,KE2016C312030016,meru,igembe central,,southeastern marginal mixed farming zone
+3021.0,KE2016C312040016,meru,igembe north,,southeastern marginal mixed farming zone
+3022.0,KE2016C312050016,meru,igembe south,,southeastern marginal mixed farming zone
+2728.0,KE2016C312060019,meru,north imenti,,"central highlands, high potential zone"
+3044.0,KE2016C312060016,meru,north imenti,,southeastern marginal mixed farming zone
+2737.0,KE2016C312070019,meru,south imenti,,"central highlands, high potential zone"
+3045.0,KE2016C312070016,meru,south imenti,,southeastern marginal mixed farming zone
+2741.0,KE2016C312080019,meru,tigania east,,"central highlands, high potential zone"
+2970.0,KE2016C312080005,meru,tigania east,,northern pastoral zone
+3047.0,KE2016C312080016,meru,tigania east,,southeastern marginal mixed farming zone
+2742.0,KE2016C312090019,meru,tigania west,,"central highlands, high potential zone"
+3174.0,KE2016C344010021,migori,awendo,,western high potential zone
+3260.0,KE2016C344010022,migori,awendo,,western lakeshore marginal mixed farming zone
+3098.0,KE2016C344020018,migori,kuria east,,southern agropastoral zone
+3117.0,KE2016C344020015,migori,kuria east,,southern pastoral zone
+3099.0,KE2016C344030018,migori,kuria west,,southern agropastoral zone
+2849.0,KE2016C344040023,migori,nyatike,,lake victoria fishing zone
+3280.0,KE2016C344040022,migori,nyatike,,western lakeshore marginal mixed farming zone
+3241.0,KE2016C344050021,migori,rongo,,western high potential zone
+3283.0,KE2016C344050022,migori,rongo,,western lakeshore marginal mixed farming zone
+3108.0,KE2016C344060018,migori,suna east,,southern agropastoral zone
+3286.0,KE2016C344060022,migori,suna east,,western lakeshore marginal mixed farming zone
+3109.0,KE2016C344070018,migori,suna west,,southern agropastoral zone
+3287.0,KE2016C344070022,migori,suna west,,western lakeshore marginal mixed farming zone
+3290.0,KE2016C344080022,migori,uriri,,western lakeshore marginal mixed farming zone
+2768.0,KE2016C301010012,mombasa,changamwe,,coastal medium potential farming zone
+2771.0,KE2016C301020012,mombasa,jomvu,,coastal medium potential farming zone
+2777.0,KE2016C301030012,mombasa,kisauni,,coastal medium potential farming zone
+2779.0,KE2016C301040012,mombasa,likoni,,coastal medium potential farming zone
+2787.0,KE2016C301060012,mombasa,nyali,,coastal medium potential farming zone
+2689.0,KE2016C321010019,muranga,gatanga,,"central highlands, high potential zone"
+2697.0,KE2016C321020019,muranga,kandara,,"central highlands, high potential zone"
+2698.0,KE2016C321030019,muranga,kangema,,"central highlands, high potential zone"
+2704.0,KE2016C321040019,muranga,kigumo,,"central highlands, high potential zone"
+2705.0,KE2016C321050019,muranga,kiharu,,"central highlands, high potential zone"
+2718.0,KE2016C321060019,muranga,maragwa,,"central highlands, high potential zone"
+2721.0,KE2016C321070019,muranga,mathioya,,"central highlands, high potential zone"
+2682.0,KE2016C347010019,nairobi,dagoretti north,,"central highlands, high potential zone"
+2683.0,KE2016C347020019,nairobi,dagoretti south,,"central highlands, high potential zone"
+2684.0,KE2016C347030019,nairobi,embakasi central,,"central highlands, high potential zone"
+2685.0,KE2016C347040019,nairobi,embakasi east,,"central highlands, high potential zone"
+2686.0,KE2016C347050019,nairobi,embakasi north,,"central highlands, high potential zone"
+2687.0,KE2016C347060019,nairobi,embakasi south,,"central highlands, high potential zone"
+2688.0,KE2016C347070019,nairobi,embakasi west,,"central highlands, high potential zone"
+2696.0,KE2016C347080019,nairobi,kamukunji,,"central highlands, high potential zone"
+2699.0,KE2016C347090019,nairobi,kasarani,,"central highlands, high potential zone"
+3052.0,KE2016C347090017,nairobi,kasarani,,"southeastern medium potential, mixed farming zone"
+2702.0,KE2016C347100019,nairobi,kibra,,"central highlands, high potential zone"
+2712.0,KE2016C347110019,nairobi,langata,,"central highlands, high potential zone"
+3100.0,KE2016C347110018,nairobi,langata,,southern agropastoral zone
+2716.0,KE2016C347120019,nairobi,makadara,,"central highlands, high potential zone"
+2720.0,KE2016C347130019,nairobi,mathare,,"central highlands, high potential zone"
+2733.0,KE2016C347140019,nairobi,roysambu,,"central highlands, high potential zone"
+2734.0,KE2016C347150019,nairobi,ruaraka,,"central highlands, high potential zone"
+2738.0,KE2016C347160019,nairobi,starehe,,"central highlands, high potential zone"
+2743.0,KE2016C347170019,nairobi,westlands,,"central highlands, high potential zone"
+3292.0,KE2016C332010020,nakuru,bahati,,western medium potential zone
+3298.0,KE2016C332020020,nakuru,gilgil,,western medium potential zone
+3214.0,KE2016C332030021,nakuru,kuresoi north,,western high potential zone
+3215.0,KE2016C332040021,nakuru,kuresoi south,,western high potential zone
+3225.0,KE2016C332050021,nakuru,molo,,western high potential zone
+3307.0,KE2016C332050020,nakuru,molo,,western medium potential zone
+3103.0,KE2016C332060018,nakuru,naivasha,,southern agropastoral zone
+3309.0,KE2016C332060020,nakuru,naivasha,,western medium potential zone
+3310.0,KE2016C332070020,nakuru,nakuru town east,,western medium potential zone
+3311.0,KE2016C332080020,nakuru,nakuru town west,,western medium potential zone
+3313.0,KE2016C332090020,nakuru,njoro,,western medium potential zone
+3316.0,KE2016C332100020,nakuru,rongai,,western medium potential zone
+3318.0,KE2016C332110020,nakuru,subukia,,western medium potential zone
+3173.0,KE2016C329010021,nandi,aldai,,western high potential zone
+3258.0,KE2016C329010022,nandi,aldai,,western lakeshore marginal mixed farming zone
+3189.0,KE2016C329020021,nandi,chesumei,,western high potential zone
+3191.0,KE2016C329030021,nandi,emgwen,,western high potential zone
+3226.0,KE2016C329040021,nandi,mosop,,western high potential zone
+3232.0,KE2016C329050021,nandi,nandi hills,,western high potential zone
+3252.0,KE2016C329060021,nandi,tinderet,,western high potential zone
+3092.0,KE2016C333010018,narok,emurua dikirr,,southern agropastoral zone
+3193.0,KE2016C333010021,narok,emurua dikirr,,western high potential zone
+3097.0,KE2016C333020018,narok,kilgoris,,southern agropastoral zone
+3116.0,KE2016C333020015,narok,kilgoris,,southern pastoral zone
+3205.0,KE2016C333020021,narok,kilgoris,,western high potential zone
+3104.0,KE2016C333030018,narok,narok east,,southern agropastoral zone
+3118.0,KE2016C333030015,narok,narok east,,southern pastoral zone
+3105.0,KE2016C333040018,narok,narok north,,southern agropastoral zone
+3119.0,KE2016C333040015,narok,narok north,,southern pastoral zone
+3233.0,KE2016C333040021,narok,narok north,,western high potential zone
+3312.0,KE2016C333040020,narok,narok north,,western medium potential zone
+3106.0,KE2016C333050018,narok,narok south,,southern agropastoral zone
+3120.0,KE2016C333050015,narok,narok south,,southern pastoral zone
+3234.0,KE2016C333050021,narok,narok south,,western high potential zone
+3107.0,KE2016C333060018,narok,narok west,,southern agropastoral zone
+3121.0,KE2016C333060015,narok,narok west,,southern pastoral zone
+3235.0,KE2016C333060021,narok,narok west,,western high potential zone
+3182.0,KE2016C346010021,nyamira,borabu,,western high potential zone
+3212.0,KE2016C346020021,nyamira,kitutu masaba,,western high potential zone
+3237.0,KE2016C346030021,nyamira,north mugirango,,western high potential zone
+3257.0,KE2016C346040021,nyamira,west mugirango,,western high potential zone
+2707.0,KE2016C318010019,nyandarua,kinangop,,"central highlands, high potential zone"
+2708.0,KE2016C318020019,nyandarua,kipipiri,,"central highlands, high potential zone"
+2726.0,KE2016C318030019,nyandarua,ndaragwa,,"central highlands, high potential zone"
+2730.0,KE2016C318040019,nyandarua,ol jorok,,"central highlands, high potential zone"
+2731.0,KE2016C318050019,nyandarua,ol kalou,,"central highlands, high potential zone"
+3314.0,KE2016C318050020,nyandarua,ol kalou,,western medium potential zone
+2703.0,KE2016C319010019,nyeri,kieni,,"central highlands, high potential zone"
+2722.0,KE2016C319020019,nyeri,mathira,,"central highlands, high potential zone"
+2724.0,KE2016C319030019,nyeri,mukurweini,,"central highlands, high potential zone"
+2729.0,KE2016C319040019,nyeri,nyeri town,,"central highlands, high potential zone"
+2732.0,KE2016C319050019,nyeri,othaya,,"central highlands, high potential zone"
+2739.0,KE2016C319060019,nyeri,tetu,,"central highlands, high potential zone"
+2973.0,KE2016C325010105,samburu,samburu east,wamba east,northern pastoral zone
+3167.0,KE2016C325010124,samburu,samburu east,wamba east,western agropastoral zone
+2974.0,KE2016C325010205,samburu,samburu east,wamba north,northern pastoral zone
+3168.0,KE2016C325010224,samburu,samburu east,wamba north,western agropastoral zone
+2975.0,KE2016C325010305,samburu,samburu east,wamba west,northern pastoral zone
+3169.0,KE2016C325010324,samburu,samburu east,wamba west,western agropastoral zone
+2976.0,KE2016C325010405,samburu,samburu east,waso,northern pastoral zone
+3170.0,KE2016C325010424,samburu,samburu east,waso,western agropastoral zone
+2943.0,KE2016C325020105,samburu,samburu north,angata nanyokie,northern pastoral zone
+3142.0,KE2016C325020124,samburu,samburu north,angata nanyokie,western agropastoral zone
+3143.0,KE2016C325020224,samburu,samburu north,baawa,western agropastoral zone
+2949.0,KE2016C325020305,samburu,samburu north,el barta,northern pastoral zone
+3147.0,KE2016C325020324,samburu,samburu north,el barta,western agropastoral zone
+2961.0,KE2016C325020405,samburu,samburu north,nachola,northern pastoral zone
+3009.0,KE2016C325020401,samburu,samburu north,nachola,northwestern pastoral zone
+3160.0,KE2016C325020424,samburu,samburu north,nachola,western agropastoral zone
+2962.0,KE2016C325020505,samburu,samburu north,ndoto,northern pastoral zone
+2837.0,KE2016C325020604,samburu,samburu north,nyiro,lake turkana fishing
+2965.0,KE2016C325020605,samburu,samburu north,nyiro,northern pastoral zone
+3012.0,KE2016C325020601,samburu,samburu north,nyiro,northwestern pastoral zone
+3155.0,KE2016C325030124,samburu,samburu west,lodokejek,western agropastoral zone
+3156.0,KE2016C325030224,samburu,samburu west,loosuk,western agropastoral zone
+3159.0,KE2016C325030324,samburu,samburu west,maralal,western agropastoral zone
+3163.0,KE2016C325030424,samburu,samburu west,porro,western agropastoral zone
+3165.0,KE2016C325030524,samburu,samburu west,suguta marmar,western agropastoral zone
+3259.0,KE2016C341010022,siaya,alego usonga,,western lakeshore marginal mixed farming zone
+2838.0,KE2016C341020023,siaya,bondo,,lake victoria fishing zone
+3261.0,KE2016C341020022,siaya,bondo,,western lakeshore marginal mixed farming zone
+3265.0,KE2016C341030022,siaya,gem,,western lakeshore marginal mixed farming zone
+2851.0,KE2016C341040023,siaya,rarieda,,lake victoria fishing zone
+3282.0,KE2016C341040022,siaya,rarieda,,western lakeshore marginal mixed farming zone
+3288.0,KE2016C341050022,siaya,ugenya,,western lakeshore marginal mixed farming zone
+3289.0,KE2016C341060022,siaya,ugunja,,western lakeshore marginal mixed farming zone
+2762.0,KE2016C306010013,taita taveta,mwatate,,coastal marginal agricultural mixed farming zone
+2764.0,KE2016C306020013,taita taveta,taveta,,coastal marginal agricultural mixed farming zone
+2765.0,KE2016C306030013,taita taveta,voi,,coastal marginal agricultural mixed farming zone
+3122.0,KE2016C306030015,taita taveta,voi,,southern pastoral zone
+2766.0,KE2016C306040013,taita taveta,wundanyi,,coastal marginal agricultural mixed farming zone
+2796.0,KE2016C304010110,tana river,bura,bungale,eastern pastoral zone
+3063.0,KE2016C304010111,tana river,bura,bungale,southeastern pastoral zone
+3123.0,KE2016C304010114,tana river,bura,bungale,tana riverine zone
+3066.0,KE2016C304010211,tana river,bura,chewele,southeastern pastoral zone
+3125.0,KE2016C304010214,tana river,bura,chewele,tana riverine zone
+3075.0,KE2016C304010311,tana river,bura,hirimani,southeastern pastoral zone
+3084.0,KE2016C304010411,tana river,bura,madogo,southeastern pastoral zone
+3133.0,KE2016C304010414,tana river,bura,madogo,tana riverine zone
+2823.0,KE2016C304010510,tana river,bura,sala,eastern pastoral zone
+3088.0,KE2016C304010511,tana river,bura,sala,southeastern pastoral zone
+3135.0,KE2016C304010514,tana river,bura,sala,tana riverine zone
+3065.0,KE2016C304020111,tana river,galole,chewani,southeastern pastoral zone
+3124.0,KE2016C304020114,tana river,galole,chewani,tana riverine zone
+3072.0,KE2016C304020211,tana river,galole,garsen west,southeastern pastoral zone
+3079.0,KE2016C304020311,tana river,galole,kinakomba,southeastern pastoral zone
+3130.0,KE2016C304020314,tana river,galole,kinakomba,tana riverine zone
+3085.0,KE2016C304020411,tana river,galole,mikinduni,southeastern pastoral zone
+3134.0,KE2016C304020414,tana river,galole,mikinduni,tana riverine zone
+3090.0,KE2016C304020511,tana river,galole,wayu,southeastern pastoral zone
+3069.0,KE2016C304030111,tana river,garsen,garsen central,southeastern pastoral zone
+3127.0,KE2016C304030114,tana river,garsen,garsen central,tana riverine zone
+3070.0,KE2016C304030211,tana river,garsen,garsen north,southeastern pastoral zone
+3128.0,KE2016C304030214,tana river,garsen,garsen north,tana riverine zone
+2746.0,KE2016C304030313,tana river,garsen,garsen south,coastal marginal agricultural mixed farming zone
+3071.0,KE2016C304030311,tana river,garsen,garsen south,southeastern pastoral zone
+3129.0,KE2016C304030314,tana river,garsen,garsen south,tana riverine zone
+2747.0,KE2016C304030413,tana river,garsen,garsen west,coastal marginal agricultural mixed farming zone
+3073.0,KE2016C304030411,tana river,garsen,garsen west,southeastern pastoral zone
+2775.0,KE2016C304030512,tana river,garsen,kipini east,coastal medium potential farming zone
+3080.0,KE2016C304030511,tana river,garsen,kipini east,southeastern pastoral zone
+2755.0,KE2016C304030613,tana river,garsen,kipini west,coastal marginal agricultural mixed farming zone
+2776.0,KE2016C304030612,tana river,garsen,kipini west,coastal medium potential farming zone
+3081.0,KE2016C304030611,tana river,garsen,kipini west,southeastern pastoral zone
+3132.0,KE2016C323010614,tana river,garsen,kipini west,tana riverine zone
+2681.0,KE2016C313010019,tharaka nithi,chuka igambangombe,,"central highlands, high potential zone"
+3018.0,KE2016C313010016,tharaka nithi,chuka igambangombe,,southeastern marginal mixed farming zone
+2715.0,KE2016C313020019,tharaka nithi,maara,,"central highlands, high potential zone"
+3033.0,KE2016C313020016,tharaka nithi,maara,,southeastern marginal mixed farming zone
+3046.0,KE2016C313030016,tharaka nithi,tharaka,,southeastern marginal mixed farming zone
+3188.0,KE2016C326010021,trans nzoia,cherangany,,western high potential zone
+3295.0,KE2016C326010020,trans nzoia,cherangany,,western medium potential zone
+3297.0,KE2016C326020020,trans nzoia,endebess,,western medium potential zone
+3207.0,KE2016C326030021,trans nzoia,kiminini,,western high potential zone
+3216.0,KE2016C326040021,trans nzoia,kwanza,,western high potential zone
+3303.0,KE2016C326040020,trans nzoia,kwanza,,western medium potential zone
+3243.0,KE2016C326050021,trans nzoia,saboti,,western high potential zone
+3317.0,KE2016C326050020,trans nzoia,saboti,,western medium potential zone
+2997.0,KE2016C323010101,turkana,loima,kotaruk lobei,northwestern pastoral zone
+3139.0,KE2016C323010102,turkana,loima,kotaruk lobei,turkwell riverine zone
+3003.0,KE2016C323010201,turkana,loima,loima,northwestern pastoral zone
+3006.0,KE2016C323010301,turkana,loima,lokiriama lorengippi,northwestern pastoral zone
+3016.0,KE2016C323010401,turkana,loima,turkwel,northwestern pastoral zone
+3141.0,KE2016C323010402,turkana,loima,turkwel,turkwell riverine zone
+2829.0,KE2016C323020104,turkana,turkana central,kalokol,lake turkana fishing
+2987.0,KE2016C323020101,turkana,turkana central,kalokol,northwestern pastoral zone
+2988.0,KE2016C323020201,turkana,turkana central,kanamkemer,northwestern pastoral zone
+3136.0,KE2016C323020202,turkana,turkana central,kanamkemer,turkwell riverine zone
+2830.0,KE2016C323020304,turkana,turkana central,kangatotha,lake turkana fishing
+2989.0,KE2016C323020301,turkana,turkana central,kangatotha,northwestern pastoral zone
+3137.0,KE2016C323020302,turkana,turkana central,kangatotha,turkwell riverine zone
+2832.0,KE2016C323020404,turkana,turkana central,kerio delta,lake turkana fishing
+2995.0,KE2016C323020401,turkana,turkana central,kerio delta,northwestern pastoral zone
+3138.0,KE2016C323020402,turkana,turkana central,kerio delta,turkwell riverine zone
+3002.0,KE2016C323020501,turkana,turkana central,lodwa township,northwestern pastoral zone
+3140.0,KE2016C323020502,turkana,turkana central,lodwa township,turkwell riverine zone
+2978.0,KE2016C323030103,turkana,turkana east,kapedo napeitom,northwestern agropastoral zone
+2990.0,KE2016C323030101,turkana,turkana east,kapedo napeitom,northwestern pastoral zone
+3149.0,KE2016C323030124,turkana,turkana east,kapedo napeitom,western agropastoral zone
+2831.0,KE2016C323030204,turkana,turkana east,katilia,lake turkana fishing
+2979.0,KE2016C323030203,turkana,turkana east,katilia,northwestern agropastoral zone
+2993.0,KE2016C323030201,turkana,turkana east,katilia,northwestern pastoral zone
+2980.0,KE2016C323030303,turkana,turkana east,lokori kochodin,northwestern agropastoral zone
+3007.0,KE2016C323030301,turkana,turkana east,lokori kochodin,northwestern pastoral zone
+2981.0,KE2016C323040101,turkana,turkana north,kaaleng kaikor,northwestern pastoral zone
+2983.0,KE2016C323040201,turkana,turkana north,kaeris,northwestern pastoral zone
+2996.0,KE2016C323040301,turkana,turkana north,kibish,northwestern pastoral zone
+2833.0,KE2016C323040404,turkana,turkana north,lakezone,lake turkana fishing
+2998.0,KE2016C323040401,turkana,turkana north,lakezone,northwestern pastoral zone
+2834.0,KE2016C323040504,turkana,turkana north,lapur,lake turkana fishing
+2999.0,KE2016C323040501,turkana,turkana north,lapur,northwestern pastoral zone
+3010.0,KE2016C323040601,turkana,turkana north,nakalale,northwestern pastoral zone
+2977.0,KE2016C323050103,turkana,turkana south,kalapata,northwestern agropastoral zone
+2985.0,KE2016C323050101,turkana,turkana south,kalapata,northwestern pastoral zone
+2992.0,KE2016C323050201,turkana,turkana south,kaputir,northwestern pastoral zone
+2994.0,KE2016C323050301,turkana,turkana south,katilu,northwestern pastoral zone
+3001.0,KE2016C323050401,turkana,turkana south,lobokat,northwestern pastoral zone
+3004.0,KE2016C323050501,turkana,turkana south,lokichar,northwestern pastoral zone
+2984.0,KE2016C323060101,turkana,turkana west,kakuma,northwestern pastoral zone
+2986.0,KE2016C323060201,turkana,turkana west,kalobeyei,northwestern pastoral zone
+3000.0,KE2016C323060301,turkana,turkana west,letea,northwestern pastoral zone
+3005.0,KE2016C323060401,turkana,turkana west,lokichoggioi,northwestern pastoral zone
+3008.0,KE2016C323060501,turkana,turkana west,lopur,northwestern pastoral zone
+3011.0,KE2016C323060601,turkana,turkana west,nanaam,northwestern pastoral zone
+3014.0,KE2016C323060701,turkana,turkana west,songot,northwestern pastoral zone
+3171.0,KE2016C327010021,uasin gishu,ainabkoi,,western high potential zone
+3199.0,KE2016C327020021,uasin gishu,kapseret,,western high potential zone
+3203.0,KE2016C327030021,uasin gishu,kesses,,western high potential zone
+3224.0,KE2016C327040021,uasin gishu,moiben,,western high potential zone
+3249.0,KE2016C327050021,uasin gishu,soy,,western high potential zone
+3254.0,KE2016C327060021,uasin gishu,turbo,,western high potential zone
+3192.0,KE2016C338010021,vihiga,emuhaya,,western high potential zone
+3194.0,KE2016C338020021,vihiga,hamisi,,western high potential zone
+3266.0,KE2016C338020022,vihiga,hamisi,,western lakeshore marginal mixed farming zone
+3273.0,KE2016C338030022,vihiga,luanda,,western lakeshore marginal mixed farming zone
+3242.0,KE2016C338040021,vihiga,sabatia,,western high potential zone
+3291.0,KE2016C338050022,vihiga,vihiga,,western lakeshore marginal mixed farming zone
+2888.0,KE2016C308010109,wajir,eldas,arbajahan,northeastern pastoral zone
+2870.0,KE2016C308010207,wajir,eldas,dela,northeastern agropastoral zone
+2900.0,KE2016C308010209,wajir,eldas,dela,northeastern pastoral zone
+2904.0,KE2016C308010309,wajir,eldas,el nur tula tula,northeastern pastoral zone
+2871.0,KE2016C308010407,wajir,eldas,eldas,northeastern agropastoral zone
+2903.0,KE2016C308010409,wajir,eldas,eldas,northeastern pastoral zone
+2877.0,KE2016C308010507,wajir,eldas,korondile,northeastern agropastoral zone
+2919.0,KE2016C308010509,wajir,eldas,korondile,northeastern pastoral zone
+2879.0,KE2016C308010607,wajir,eldas,lakole south basir,northeastern agropastoral zone
+2924.0,KE2016C308010609,wajir,eldas,lakole south basir,northeastern pastoral zone
+2902.0,KE2016C308020109,wajir,tarbaj,elben,northeastern pastoral zone
+2932.0,KE2016C308020209,wajir,tarbaj,sarman,northeastern pastoral zone
+2937.0,KE2016C308020309,wajir,tarbaj,tarbaj,northeastern pastoral zone
+2942.0,KE2016C308020409,wajir,tarbaj,wargadud,northeastern pastoral zone
+2893.0,KE2016C308030109,wajir,wajir east,barwago,northeastern pastoral zone
+2813.0,KE2016C308030210,wajir,wajir east,khorof harar,eastern pastoral zone
+2916.0,KE2016C308030209,wajir,wajir east,khorof harar,northeastern pastoral zone
+2938.0,KE2016C308030309,wajir,wajir east,township,northeastern pastoral zone
+2939.0,KE2016C308030409,wajir,wajir east,wagberi,northeastern pastoral zone
+2865.0,KE2016C308040107,wajir,wajir north,batalu,northeastern agropastoral zone
+2894.0,KE2016C308040109,wajir,wajir north,batalu,northeastern pastoral zone
+2866.0,KE2016C308040207,wajir,wajir north,bute,northeastern agropastoral zone
+2868.0,KE2016C308040307,wajir,wajir north,danaba,northeastern agropastoral zone
+2899.0,KE2016C308040309,wajir,wajir north,danaba,northeastern pastoral zone
+2873.0,KE2016C308040407,wajir,wajir north,godoma,northeastern agropastoral zone
+2875.0,KE2016C308040507,wajir,wajir north,gurar,northeastern agropastoral zone
+2878.0,KE2016C308040607,wajir,wajir north,korondile,northeastern agropastoral zone
+2880.0,KE2016C308040707,wajir,wajir north,malkagufu,northeastern agropastoral zone
+2795.0,KE2016C308050110,wajir,wajir south,benane(wajir),eastern pastoral zone
+2797.0,KE2016C308050210,wajir,wajir south,burder,eastern pastoral zone
+2896.0,KE2016C308050209,wajir,wajir south,burder,northeastern pastoral zone
+2799.0,KE2016C308050310,wajir,wajir south,dadaja bulla,eastern pastoral zone
+2803.0,KE2016C308050410,wajir,wajir south,diff,eastern pastoral zone
+2808.0,KE2016C308050510,wajir,wajir south,habasswein,eastern pastoral zone
+2809.0,KE2016C308050610,wajir,wajir south,ibrahim ure,eastern pastoral zone
+2914.0,KE2016C308050609,wajir,wajir south,ibrahim ure,northeastern pastoral zone
+2816.0,KE2016C308050710,wajir,wajir south,lagboghol south,eastern pastoral zone
+2922.0,KE2016C308050709,wajir,wajir south,lagboghol south,northeastern pastoral zone
+2884.0,KE2016C308060109,wajir,wajir west,adamsajide,northeastern pastoral zone
+2889.0,KE2016C308060209,wajir,wajir west,arbajahan,northeastern pastoral zone
+2908.0,KE2016C308060309,wajir,wajir west,ganyure wagalla,northeastern pastoral zone
+2913.0,KE2016C308060409,wajir,wajir west,hadado adhibohol,northeastern pastoral zone
+2925.0,KE2016C308060509,wajir,wajir west,lakole south basir,northeastern pastoral zone
+2982.0,KE2016C324010001,west pokot,kacheliba,,northwestern pastoral zone
+3148.0,KE2016C324010024,west pokot,kacheliba,,western agropastoral zone
+3299.0,KE2016C324010020,west pokot,kacheliba,,western medium potential zone
+2991.0,KE2016C324020001,west pokot,kapenguria,,northwestern pastoral zone
+3150.0,KE2016C324020024,west pokot,kapenguria,,western agropastoral zone
+3300.0,KE2016C324020020,west pokot,kapenguria,,western medium potential zone
+3162.0,KE2016C324030024,west pokot,pokot south,,western agropastoral zone
+3315.0,KE2016C324030020,west pokot,pokot south,,western medium potential zone
+3013.0,KE2016C324040001,west pokot,sigor,,northwestern pastoral zone
+3164.0,KE2016C324040024,west pokot,sigor,,western agropastoral zone

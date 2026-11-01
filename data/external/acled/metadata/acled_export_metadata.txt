@@ -1,0 +1,64 @@
+ACLED RESEARCH EXPORT METADATA
+======================================================================
+
+Download timestamp: 2026-09-18 16:06:41 UTC
+
+Source: ACLED
+Access tier: Research
+
+Countries:
+  - Kenya
+  - Ethiopia
+  - Somalia
+
+Start date: 2018-01-01
+End date: 2023-12-31
+
+Primary API endpoint:
+https://acleddata.com/api/acled/read
+
+Fields retained in raw export:
+  - event_id_cnty
+  - event_date
+  - latitude
+  - longitude
+  - fatalities
+  - country
+  - event_type
+  - sub_event_type
+
+Reduced dataset fields:
+  - event_date
+  - latitude
+  - longitude
+  - fatalities
+  - country
+
+Total events: 33,964
+
+Events by country:
+  - Ethiopia: 7,189
+  - Kenya: 6,861
+  - Somalia: 19,914
+
+Events by year:
+  - 2018: 4,790
+  - 2019: 3,963
+  - 2020: 4,350
+  - 2021: 5,773
+  - 2022: 6,970
+  - 2023: 8,118
+
+Notes:
+  - Data retrieved through the ACLED API.
+  - Country and date filters were applied at API level.
+  - Cursor-based pagination was used.
+  - The raw export retains additional fields for
+    validation and potential future analysis.
+  - Duplicate event_id_cnty records are removed before
+    validation and saving, so validation describes the
+    final retained dataset.
+  - The completion message reports unique events retained.
+
+Reduced-dataset sha256[:16]: c7eaef347363972e
+  (version-pin: cite this hash + download timestamp for reproducibility)

@@ -1,0 +1,132 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+# ============================================================
+# Virtual environments
+# ============================================================
+gee_env/
+.venv/
+venv/
+env/
+
+# ============================================================
+# Data — raw / downloaded / generated
+# ============================================================
+data/raw/
+data/processed/**
+data/climatology/
+data/archived/
+
+# ============================================================
+# Generated/intermediate data
+# ============================================================
+data/interim/
+
+# ============================================================
+# Large generated outputs
+# ============================================================
+outputs/**
+# anchored: the stray top-level ./processed only, not data/processed
+/processed/
+
+# ============================================================
+# PyTorch Lightning
+# ============================================================
+lightning_logs/
+
+# Model checkpoints
+*.ckpt
+*.pth
+*.pt
+
+# ============================================================
+# Jupyter
+# ============================================================
+.ipynb_checkpoints/
+
+# ============================================================
+# IDE
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Environment / secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+
+# ============================================================
+# macOS
+# ============================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# ============================================================
+# Coverage / testing
+# ============================================================
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.tmp.driveupload/
+
+# ==========================================================
+# Third-party data under licence — never published
+# ==========================================================
+data/external/**
+!data/external/acled/
+!data/external/acled/metadata/
+!data/external/acled/metadata/acled_export_metadata.txt
+
+notebooks/
+
+# ==========================================================
+# Published artifacts — re-included file by file (see README.md)
+# ==========================================================
+# Frozen v2 country panels and their freeze record
+!data/processed/v2/
+!data/processed/v2/kenya_feature_panel.csv
+!data/processed/v2/ethiopia_feature_panel.csv
+!data/processed/v2/somalia_feature_panel.csv
+!data/processed/v2/MANIFEST.txt
+
+# Results files behind the reported tables and figures
+!outputs/diagnostics/
+!outputs/diagnostics/c2_shap.csv
+!outputs/diagnostics/m10_metric_grid.csv
+!outputs/diagnostics/m10_xgboost_4arm.csv
+!outputs/diagnostics/m10_lightgbm_4arm.csv
+!outputs/diagnostics/m10_baselines.csv
+!outputs/diagnostics/m10_xgboost_configs.csv
+!outputs/diagnostics/c2_conformal.csv
+!outputs/diagnostics/c2_conformal_weighted.csv
+!outputs/diagnostics/c3_transfer.csv
+!outputs/diagnostics/c3_transfer_baselines.csv
+!outputs/diagnostics/c3_conformal_transfer.csv
+!outputs/diagnostics/configD.csv
+!outputs/diagnostics/m10_tft_gate.csv
+!outputs/diagnostics/p9_observed_phase3.csv
+!outputs/diagnostics/m10_p12_rowmatched.csv
+
+# ==========================================================
+# Working records — retained locally, not published (see README)
+# ==========================================================
+docs/

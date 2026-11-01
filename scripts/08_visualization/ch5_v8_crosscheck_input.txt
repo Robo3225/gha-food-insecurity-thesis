@@ -1,0 +1,257 @@
+5  Results
+This chapter reports the results of the study in the order of its contributions: the composition of the prediction target and the evaluation rows (Section 5.1); the outcome of the pre-registered model-selection gate (Section 5.2); the benchmark of the two gradient-boosting models against persistence and the FEWS NET projection (Section 5.3); the added value of biophysical signal beyond recent phase history, measured by ablation and by feature attribution (Section 5.4); predictive uncertainty (Section 5.5); and transferability to Somalia (Section 5.6). Section 5.7 summarises the results. Their interpretation is reserved for Chapter 6.
+Several conventions apply throughout. Validation windows are identified by the calendar year of the period being predicted (t + h), not of the feature time: 2021 is the window of drought onset, 2022 the crisis peak, and 2023 the post-peak year in which the rains returned but crisis prevalence remained elevated. The three-month horizon (h = 3) is the primary horizon; the one-month horizon (h = 1) is reported as the floor at which persistence dominates. The primary metric is the area under the precision–recall curve (PR-AUC), reported with the area under the ROC curve (ROC-AUC) and the Brier score (Section 4.8). Results are reported per window rather than pooled, and a row count accompanies every score.
+Each method is scored on the rows for which it can issue a forecast and the target is observed. The models can forecast every row with an available target; persistence additionally requires the phase at feature time; and the FEWS NET projection exists only on the smaller subset of rows with a period-matched projection, and only at h = 3 (Table 5.3). Every comparison between methods is row-matched: when a model is compared with a baseline, the model is re-scored on exactly the baseline's rows, and the row count of each comparison is reported (Section 4.5). Where a model's score on its own full row-set is reported alongside, its row count is given separately.
+5.1  Outcome distribution and evaluation rows
+Table 5.1 reports the prevalence of Phase 3+ among labelled unit-months in each evaluation year. Unlabelled unit-months are excluded rather than counted as negatives.
+Table 5.1 — Phase 3+ prevalence among labelled unit-months, by country and year (%).
+Country	2021	2022	2023
+Kenya	21.57	45.28	45.36
+Ethiopia	20.78	36.81	28.21
+Somalia	27.90	68.41	63.58
+Pooled	21.96	42.34	37.08
+
+Pooled prevalence nearly doubled between 2021 and 2022, from 21.96% to 42.34%, and fell to 37.08% in 2023. The pooled pattern conceals marked differences between countries. Somalia had the highest prevalence in every year, and in 2022 more than two-thirds of its labelled unit-months were classified Phase 3+. In 2023, prevalence stayed close to its 2022 level in Kenya (45.36%) and Somalia (63.58%) but fell in Ethiopia (from 36.81% to 28.21%). Because Ethiopia contributes 1,040 of the 1,877 reporting units, it carries the largest weight in the pooled figure, and its 2023 decline accounts for much of the pooled decline.
+Because the monthly labels are produced by forward-filling tri-annual assessments (Section 3.6.2), the elevation could in principle be an artifact of the fill. Table 5.2 therefore compares the prevalence among directly observed assessments with the prevalence among all labelled unit-months.
+Table 5.2 — Phase 3+ prevalence among directly observed assessments and among all labelled unit-months.
+Year	Country	Observed assessments (n)	Observed prevalence	All labelled (n)	All-labelled prevalence	Difference
+2021	Kenya	1,916	0.249	7,665	0.216	+0.033
+2021	Ethiopia	2,081	0.229	9,363	0.208	+0.021
+2021	Somalia	594	0.281	2,376	0.279	+0.002
+2022	Kenya	1,917	0.456	7,668	0.453	+0.004
+2022	Ethiopia	3,120	0.376	12,480	0.368	+0.008
+2022	Somalia	396	0.722	1,782	0.684	+0.038
+2023	Kenya	1,917	0.451	7,668	0.454	−0.003
+2023	Ethiopia	3,120	0.271	12,480	0.282	−0.011
+2023	Somalia	396	0.634	1,782	0.636	−0.002
+Note. Difference = observed minus all-labelled prevalence.
+
+The rise from 2021 to 2022 is present in the observed assessments of all three countries: from 0.249 to 0.456 in Kenya, from 0.229 to 0.376 in Ethiopia, and from 0.281 to 0.722 in Somalia. The two measures differ by at most 0.038 in any cell. In 2021 and 2022 the observed prevalence is the higher of the two in every country, and in 2023 it is marginally lower (by 0.011 at most), so the fill neither creates the elevation nor materially changes its size. Somalia's majority-crisis prevalence in 2022 and 2023 rests on 396 observed unit-months in each year — two assessment rounds, since one round is missing in each year (Section 3.9).
+The target is moderately imbalanced, from roughly one positive in five labelled unit-months in 2021 to roughly two in five in 2022, and the imbalance changes between windows. This matters for reading the precision–recall results that follow: the PR-AUC of a classifier without skill equals the prevalence of the rows on which it is scored, so the same PR-AUC represents different amounts of skill in different windows.
+Table 5.3 — Evaluation row-sets by validation window and horizon.
+Window	h	Unit-months	Model rows (n)	Model-row prevalence	Persistence rows (n)	Persistence-row prevalence	Excluded from persistence rows (n)	FEWS-aligned rows (n)
+2021	3	22,524	19,404	0.220	16,284	0.213	6,240	3,551
+2022	3	22,524	21,930	0.423	21,336	0.416	1,188	5,235
+2023	3	22,524	21,930	0.371	21,336	0.365	1,188	5,235
+2021	1	22,524	19,404	0.220	18,364	0.218	4,160	—
+2022	1	22,524	21,930	0.423	21,732	0.421	792	—
+2023	1	22,524	21,930	0.371	21,732	0.369	792	—
+Note. Unit-months = 1,877 reporting units × 12 predicted months. Model rows require an available target; persistence rows additionally require the phase at feature time. No FEWS NET projection exists at h = 1 (Section 4.4).
+
+At h = 3, the persistence row-set excludes 6,240 rows (27.7%) in 2021 and 1,188 (5.3%) in each of 2022 and 2023. The exclusions arise almost entirely from the missing assessment rounds described in Section 3.9. In 2021, 6,234 of the 6,240 are Ethiopian rows affected by the missing June 2021 round — 3,117 lacking the target and 3,117 lacking the persistence input — and the remaining 6 are Kenyan. In 2022 and 2023, all 1,188 are Somali rows affected by the missing June 2022 and February 2023 rounds, 594 for each reason. Somalia contributes no exclusions in 2021, and Ethiopia and Kenya none in 2022 or 2023. Two consequences follow. The 2021 window is scored with three months of Ethiopian targets absent, so any feature of the 2021 results that could reflect that absence is read as a coverage artifact rather than as model behaviour. And half of Somalia's persistence rows are excluded in 2022 and 2023 (1,188 of 2,376 in each window), including the second half of 2022; Somali results in those windows rest on the remaining half.
+5.2  Model selection
+The pre-registered model-selection gate (Section 4.7) evaluated an attention-based Temporal Fusion Transformer against three criteria fixed before results were seen: stable training at full panel scale; discrimination within 0.05 PR-AUC of the gradient-boosting benchmark on identical evaluation rows; and coverage between 70% and 90% for the nominal 80% predictive interval. The gate was assessed at h = 3, the horizon at which the forecasting problem is non-trivial. The candidate was scored with a continuous probability of Phase 3+ derived from its own predictive quantiles, the like-for-like counterpart of the benchmark models' probabilities; scoring it with a thresholded point prediction would have understated it. Its specification is given in Appendix A. Table 5.4 reports the outcome.
+Table 5.4 — Model-selection gate outcome for the attention-based candidate (h = 3).
+Window	XGBoost (B) PR-AUC	Candidate PR-AUC	Difference	Within 0.05?	Candidate 80% interval coverage	Within 70–90%?
+2021	0.733	0.493	−0.240	No	0.712	Yes
+2022	0.945	0.754	−0.191	No	0.643	No
+2023	0.890	0.838	−0.052	No	0.792	Yes
+Note. The candidate trained stably at full panel scale (first criterion met). Gate outcome: not met.
+
+The candidate trained stably but did not satisfy the gate. Its discrimination fell short of XGBoost in all three windows — by 0.240 PR-AUC in 2021, 0.191 in 2022, and 0.052 in 2023 — so the within-0.05 threshold was not met in any window. Its 80% intervals covered within the pre-registered range in 2021 (0.712) and 2023 (0.792) but under-covered at the 2022 crisis peak (0.643, against a floor of 0.70). The candidate therefore failed both performance criteria, and the pre-registered fallback was adopted: LightGBM as the second benchmark model, with LightGBM quantile regression as the source of predictive intervals (Section 4.10). The two gradient-boosting models are reported in all subsequent sections.
+5.3  Benchmark performance
+5.3.1  Three-month horizon
+Table 5.5 reports PR-AUC at h = 3 for the two gradient-boosting models in their primary configuration (biophysical predictors with phase history; Section 4.6) against the two baselines. Each panel is row-matched: the upper panel scores every method on the persistence rows, and the lower panel scores every method, including persistence, on the FEWS-aligned rows.
+Table 5.5 — PR-AUC at h = 3, row-matched.
+Row-set	Window	XGBoost (B)	LightGBM (B)	Persistence	FEWS NET projection	n
+Persistence rows	2021	0.753	0.746	0.593	—	16,284
+	2022	0.948	0.942	0.892	—	21,336
+	2023	0.893	0.878	0.806	—	21,336
+FEWS-aligned rows	2021	0.683	0.674	0.476	0.514	3,551
+	2022	0.924	0.914	0.857	0.869	5,235
+	2023	0.881	0.854	0.737	0.835	5,235
+Note. On their own full row-sets (n = 19,404 / 21,930 / 21,930), the models scored 0.733 / 0.945 / 0.890 (XGBoost) and 0.716 / 0.939 / 0.875 (LightGBM); these are the scores used in the ablation of Section 5.4.
+
+Both gradient-boosting models exceeded both baselines in every window on identical rows. On the persistence rows, XGBoost exceeded persistence by 0.161, 0.056, and 0.087 in 2021, 2022, and 2023, and LightGBM by 0.153, 0.049, and 0.072. On the FEWS-aligned rows, XGBoost exceeded the FEWS NET projection by 0.169, 0.055, and 0.046, and LightGBM by 0.160, 0.045, and 0.019; the smallest margin in the table is therefore LightGBM's over the FEWS NET projection in 2023. On the same rows, the FEWS NET projection itself exceeded persistence in all three windows, by 0.038, 0.012, and 0.098. The margins over both baselines were largest in 2021. Every method scored lower on the FEWS-aligned rows than on the persistence rows, so that subset is the harder of the two; comparisons are made within each panel, not across them.
+The two models were within 0.027 PR-AUC of each other on every row-set and in every window, with XGBoost the higher throughout. For reference, a classifier without skill scores the prevalence of its rows — 0.213, 0.416, and 0.365 on the persistence rows, and 0.242, 0.420, and 0.352 on the FEWS-aligned rows.
+Table 5.6 — ROC-AUC and Brier score at h = 3, row-matched.
+Row-set	Window	Metric	XGBoost (B)	LightGBM (B)	Persistence	FEWS NET projection
+Persistence rows	2021	ROC-AUC	0.900	0.900	0.777	—
+		Brier	0.098	0.099	0.109	—
+	2022	ROC-AUC	0.963	0.961	0.927	—
+		Brier	0.067	0.068	0.066	—
+	2023	ROC-AUC	0.945	0.941	0.907	—
+		Brier	0.087	0.088	0.092	—
+FEWS-aligned rows	2021	ROC-AUC	0.863	0.866	0.696	0.769
+		Brier	0.126	0.126	0.166	0.164
+	2022	ROC-AUC	0.950	0.946	0.901	0.913
+		Brier	0.085	0.088	0.089	0.080
+	2023	ROC-AUC	0.942	0.935	0.872	0.924
+		Brier	0.094	0.099	0.125	0.074
+Note. Persistence and the FEWS NET projection issue a binary prediction rather than a probability, so for them the Brier score equals the misclassification rate and ROC-AUC is computed from a single operating point (Section 4.8). Row counts as in Table 5.5.
+
+ROC-AUC ordered the methods as PR-AUC did in every window and on both row-sets, with both models above both baselines. The Brier score did not. On the persistence rows, both models had a lower (better) Brier score than persistence in 2021 and 2023 and a marginally higher one in 2022 (by 0.001 for XGBoost and 0.002 for LightGBM). On the FEWS-aligned rows, both models had a lower Brier score than persistence in every window, and than the FEWS NET projection in 2021, but a higher one than the FEWS NET projection in 2022 (0.085 and 0.088 against 0.080) and 2023 (0.094 and 0.099 against 0.074). On this metric the models are therefore competitive with the baselines rather than uniformly better.
+5.3.2  One-month horizon
+Table 5.7 — PR-AUC at h = 1, row-matched on the persistence rows. No FEWS NET comparator exists at this horizon (Section 4.4).
+Window	XGBoost (B)	LightGBM (B)	Persistence	n
+2021	0.882	0.878	0.880	18,364
+2022	0.978	0.977	0.965	21,732
+2023	0.964	0.953	0.933	21,732
+
+At h = 1, persistence scored between 0.880 and 0.965. XGBoost exceeded it in every window, by 0.002, 0.013, and 0.031. LightGBM exceeded it in 2022 and 2023 but fell 0.002 below it in 2021. The one-month horizon is dominated by the month-to-month stability of the phase record, and the rest of the chapter concentrates on h = 3. The models' close tracking of persistence at h = 1, rather than a large advantage over it, is the pattern expected in the absence of target leakage through the phase-history features (Section 4.6).
+5.4  The added value of biophysical signal
+5.4.1  Four-arm ablation
+Table 5.8 reports the ablation at h = 3. Configuration A uses biophysical and static predictors only; C uses phase history only; B combines them and is the primary configuration of Section 5.3 (Section 4.6). All three are scored on the same model rows, so their differences are like-for-like. The increment B − C measures what biophysical predictors add when recent phase history is already known.
+Table 5.8 — Ablation at h = 3 (PR-AUC).
+Model	Configuration	2021	2022	2023
+XGBoost	A — biophysical and static	0.505	0.786	0.726
+	C — phase history	0.616	0.909	0.870
+	B — biophysical, static, and phase history	0.733	0.945	0.890
+	B − C	+0.117	+0.036	+0.021
+	B − A	+0.228	+0.160	+0.164
+LightGBM	A — biophysical and static	0.501	0.778	0.713
+	C — phase history	0.616	0.910	0.855
+	B — biophysical, static, and phase history	0.716	0.939	0.875
+	B − C	+0.100	+0.030	+0.020
+	B − A	+0.215	+0.161	+0.162
+n		19,404	21,930	21,930
+Note. Differences are computed from unrounded scores and may differ by 0.001 from differences of the rounded values shown.
+
+The biophysical-only configuration (A) scored well above the no-skill reference in every window (0.505 against 0.220 in 2021 for XGBoost). Adding biophysical predictors to phase history raised PR-AUC in every window and for both models, and by the most in 2021: B − C was +0.117 for XGBoost and +0.100 for LightGBM in 2021, against +0.036 and +0.030 in 2022 and +0.021 and +0.020 in 2023. The two models agreed on the increment to within 0.017 in every window. Adding phase history to biophysical predictors (B − A) raised PR-AUC by between 0.160 and 0.228.
+The secondary metrics qualify the increment after 2021. On ROC-AUC, B exceeded C in every cell except XGBoost in 2023, where C was higher by 0.002 (0.944 against 0.942). On the Brier score, B improved on C in 2021 for both models (XGBoost 0.105 against 0.138) but was slightly worse in 2023 for both (by 0.004 for XGBoost and 0.006 for LightGBM) and in 2022 for XGBoost (by 0.003). The increment in 2021 is therefore consistent across all three metrics; the smaller increments of 2022 and 2023 appear on PR-AUC, the primary metric, but not in the calibration of the predicted probabilities. At h = 1, adding biophysical predictors to phase history did not raise PR-AUC consistently: B − C was −0.020 and −0.034 in 2021 (XGBoost, LightGBM), +0.004 in 2022 for both, and +0.008 and −0.010 in 2023.
+Table 5.9 reports the conflict ablation arm. Configuration D adds the conflict features of Section 3.7.6 to B. The arm is trained and scored in a separate run on the conflict-joined panel, which imputes all missing predictor values to zero before training, whereas every other model in the study passes missing values to the gradient-boosting model's native handling (Section 4.6). Its B is therefore a separately trained model and differs from the canonical B of Table 5.8 by up to 0.016 PR-AUC; D is compared only with the B of its own run, where both share the same imputation.
+Table 5.9 — Conflict ablation at h = 3 (PR-AUC; separate run on the conflict-joined panel).
+Model	Configuration	2021	2022	2023
+XGBoost	B (this run)	0.717	0.946	0.882
+	D — B with conflict	0.720	0.944	0.873
+	D − B	+0.003	−0.002	−0.009
+LightGBM	B (this run)	0.714	0.939	0.863
+	D — B with conflict	0.716	0.942	0.864
+	D − B	+0.002	+0.003	+0.001
+n		19,404	21,930	21,930
+
+Adding conflict features changed PR-AUC by between −0.009 and +0.003, with no consistent sign across windows or models. Both possible outcomes of this arm were pre-registered as reportable before it was run (Section 4.12).
+[Figure 5.1 — file: figures/Figure_5_1_increment_and_shap.pdf]
+Figure 5.1 — The added value of biophysical signal at h = 3, by validation window and model. (a) Ablation: PR-AUC increment of the biophysical-plus-phase-history configuration (B) over phase history alone (C). (b) Attribution: share of tree-SHAP attribution assigned to biophysical predictors in configuration B. The two panels use different scales and measure different quantities (Section 5.4.2); both order the windows identically for both models. Source: Table 5.10.
+5.4.2  Feature attribution
+Table 5.10 reports the share of tree-SHAP attribution (Lundberg & Lee, 2017) assigned to biophysical predictors in the primary configuration. For each window, the mean absolute SHAP value of each predictor is computed over the model's scored test rows. The predictors are grouped into three disjoint sets: biophysical (NDVI, SPI-3, VCI, and LST anomaly, with their lags), phase history, and static (population density and climate class). The biophysical share is the biophysical group's sum divided by the sum over all predictors, so the three shares sum to one. Attribution is post hoc, on the already-trained models.
+Table 5.10 — Biophysical share of SHAP attribution, with the ablation increment at h = 3 for comparison.
+Window	h = 3: XGBoost	h = 3: LightGBM	h = 1: XGBoost	h = 1: LightGBM	B − C, h = 3: XGBoost	B − C, h = 3: LightGBM
+2021	0.558	0.573	0.457	0.482	+0.117	+0.100
+2022	0.458	0.450	0.402	0.401	+0.036	+0.030
+2023	0.426	0.399	0.373	0.347	+0.021	+0.020
+
+At h = 3 the biophysical share of attribution declined from 2021 to 2023 in both models, from 0.558 to 0.426 for XGBoost and from 0.573 to 0.399 for LightGBM, and the two models agreed to within 0.027 in every window. The ordering of the three windows by attribution share was the same as their ordering by the ablation increment, for both models (Spearman ρ = 1.00; with three windows this expresses identical ordering rather than a precise estimate of association). At h = 1 the biophysical share was lower than at h = 3 in every window and model, with phase history carrying the largest share (0.39–0.54). The two measures differ greatly in magnitude: at h = 3 biophysical predictors received 40–57% of the attribution, while the ablation increment was 0.02–0.12 PR-AUC. They measure different quantities — attribution distributes a prediction across all predictors that carry information about it, whereas the ablation measures the information biophysical predictors add once phase history is present — and their relationship is examined in Chapter 6.
+5.4.3  Attribution stratified by humanitarian assistance
+Because the target is the post-assistance phase (Section 3.5.1), attributions could in principle partly reflect where assistance was delivered. Table 5.11 compares the biophysical share of attribution between rows with and without recorded humanitarian assistance. A row is assigned to the aid-heavy stratum when the binary assistance flag is set at feature time t — the assistance status known when the forecast is issued — and to the aid-light stratum otherwise. The flag is used only to partition rows; it is never a predictor (Section 3.5.1).
+Table 5.11 — Biophysical SHAP share by assistance stratum at h = 3.
+Window	Model	Aid-heavy rows (n)	Aid-light rows (n)	Aid-heavy share of rows (%)	Biophysical share, aid-heavy	Biophysical share, aid-light	Difference (heavy − light)
+2021	XGBoost	191	19,213	1.0	0.593	0.527	+0.065
+2021	LightGBM	191	19,213	1.0	0.650	0.553	+0.097
+2022	XGBoost	291	21,639	1.3	0.388	0.431	−0.043
+2022	LightGBM	291	21,639	1.3	0.330	0.418	−0.088
+2023	XGBoost	891	21,039	4.1	0.386	0.401	−0.015
+2023	LightGBM	891	21,039	4.1	0.332	0.378	−0.046
+
+In 2021 the aid-heavy rows had a higher biophysical share than the aid-light rows; in 2022 and 2023 a lower one. The sign of the difference therefore changed between windows, and in each window it was the same for both models. The aid-heavy stratum was small — between 1.0% and 4.1% of rows, and only 191 rows in 2021 — and it is not a random subset: assistance is concentrated in the most severe units, so the two strata differ in severity as well as in assistance, and this comparison cannot separate the two. The probe does not establish whether attributions reflect the geography of assistance. What it establishes is narrower: no consistent difference in the biophysical share was found between the strata. The finding is suggestive, not a resolution, and its implications for the transparency of the system are discussed in Chapter 6.
+5.5  Predictive uncertainty
+5.5.1  Interval coverage
+Predictive intervals are produced by LightGBM quantile regression at the 10th and 90th percentiles and calibrated by split-conformal prediction on a calibration slice drawn from the training window only (Section 4.10). The interval is placed on the ordinal IPC phase (1–5) at t + h, so its width is measured in phase units. Coverage is assessed on the rows whose target month carries an observed assessment, n = 4,591, 5,433, and 5,433 in 2021, 2022, and 2023 — fewer than the rows of Table 5.3, which include forward-filled targets. Table 5.12 reports coverage of the nominal 80% interval.
+Table 5.12 — Coverage of the nominal 80% predictive interval (LightGBM quantile regression).
+h	Window	Before conformal calibration	Split-conformal	Recency-weighted conformal	Mean width, split-conformal (phase units)	n
+3	2021	0.597	0.761	0.761	1.069	4,591
+3	2022	0.528	0.684	0.737	1.181	5,433
+3	2023	0.710	0.842	0.852	1.211	5,433
+1	2021	0.574	0.731	0.746	1.148	4,591
+1	2022	0.582	0.711	0.717	1.248	5,433
+1	2023	0.710	0.843	0.831	1.254	5,433
+
+Conformal calibration raised coverage in every cell, by between 0.13 and 0.16, while widening the intervals only slightly: mean widths after calibration lay between 1.07 and 1.25 phase units. Calibrated coverage remained below the nominal level in 2021 and 2022 at both horizons and exceeded it in 2023 at both horizons. The shortfall was largest at the 2022 crisis peak at h = 3, where coverage was 0.684, 0.116 below nominal. The recency-weighted variant, pre-registered as a shift-robust extension, raised coverage by the most in that same cell (to 0.737, a gain of 0.053), left 2021 at h = 3 unchanged, and lowered 2023 at h = 1 slightly (to 0.831); it did not reach the nominal level in any cell in which split-conformal coverage fell short. Both possible outcomes of this analysis were committed to as reportable before it was run (Section 4.12).
+[Figure 5.2 — file: figures/Figure_5_2_coverage.pdf]
+Figure 5.2 — Coverage of the nominal 80% predictive interval at h = 3, by validation window. Solid lines: in-pool; dashed lines: transferred to Somalia with calibration on Kenya and Ethiopia only. Blue: split-conformal; orange: recency-weighted conformal. The dotted line marks nominal coverage. In 2021 the two calibration variants coincide in-pool (0.761) and under transfer (0.704), so their markers overlap. Coverage falls furthest below nominal at the 2022 crisis peak, most of all under transfer. Sources: Tables 5.12 and 5.16.
+5.5.2  Confidence tiers
+Each forecast is assigned a HIGH, MEDIUM, or LOW confidence tier from two inputs: the width of its calibrated interval, and a distribution-shift score measuring how far its features lie from the training distribution. Forecasts made under detected shift are downgraded (Section 4.10). The tiers are designed to stratify the reliability of forecasts. Whether they do so on the real predictions was not evaluated in this study, and this section makes no empirical claim that they do; the validation is set out as future work in Section 7.5.
+5.6  Transferability to Somalia
+Models trained on Kenya and Ethiopia were applied to Somalia, which contributed no training rows; Somalia's features are constructed within Somalia (Section 4.11). Results are reported per window on Somalia's rows, against Somalia's own persistence and FEWS NET baselines. Absolute scores under transfer are not directly comparable with the in-pool scores of Section 5.3, which are computed on rows from all three countries, so comparisons between the two settings are made on increments within each setting, such as B − C, rather than on absolute levels. Prevalence on Somalia's persistence rows was 0.279 in 2021, 0.690 in 2022, and 0.666 in 2023: the later windows are majority-crisis, which raises the no-skill reference for PR-AUC. As Section 5.1 showed, half of Somalia's persistence rows in 2022 and 2023 are excluded by the two missing assessment rounds.
+5.6.1  Transferred performance
+Table 5.13 — PR-AUC on Somalia at h = 3, row-matched: transferred primary configuration and Somalia's own baselines.
+Row-set	Window	XGBoost (B), transferred	LightGBM (B), transferred	Persistence	FEWS NET projection	n
+Somalia persistence rows	2021	0.550	0.551	0.465	—	2,376
+	2022	0.905	0.901	0.866	—	1,188
+	2023	0.951	0.949	0.931	—	1,188
+Somalia FEWS-aligned rows	2021	0.526	0.517	0.363	0.416	594
+	2022	0.851	0.835	0.817	0.900	198
+	2023	0.914	0.906	0.876	0.871	198
+Note. The FEWS-aligned rows in 2022 and 2023 comprise a single assessment round each (198 units). On their own full transfer row-sets (n = 2,376 / 1,782 / 1,782), the transferred models scored 0.550 / 0.883 / 0.917 (XGBoost) and 0.551 / 0.882 / 0.914 (LightGBM); these are the scores used in Table 5.14.
+
+On Somalia's persistence rows, both transferred models exceeded Somalia's persistence baseline in every window: XGBoost by 0.085, 0.040, and 0.020, and LightGBM by 0.086, 0.036, and 0.017. On the FEWS-aligned rows they exceeded Somalia's FEWS NET projection in 2021 (XGBoost by 0.110, LightGBM by 0.101) and 2023 (by 0.043 and 0.035) but fell below it at the 2022 crisis peak, by 0.049 and 0.066. This is the only comparison at h = 3 in the study in which a gradient-boosting model scored below a baseline on identical rows. On the same rows, the FEWS NET projection exceeded Somalia's persistence baseline in 2021 (by 0.053) and 2022 (by 0.083), and the two were effectively tied in 2023 (persistence higher by 0.005). Every comparison with the FEWS NET projection in 2022 and 2023 rests on one assessment round of 198 units.
+5.6.2  Which components transfer
+Table 5.14 — Ablation under transfer to Somalia at h = 3 (PR-AUC), with the in-pool increment for comparison.
+Model	Window	A — biophysical and static	C — phase history	B	B − C, transferred	B − C, in-pool (Table 5.8)
+XGBoost	2021	0.290	0.548	0.550	+0.002	+0.117
+	2022	0.724	0.843	0.883	+0.040	+0.036
+	2023	0.658	0.878	0.917	+0.039	+0.021
+LightGBM	2021	0.303	0.556	0.551	−0.005	+0.100
+	2022	0.723	0.848	0.882	+0.034	+0.030
+	2023	0.637	0.878	0.914	+0.036	+0.020
+n = 2,376 / 1,782 / 1,782 (A, B, and C are scored on identical rows; these are the full transfer row-sets, which drop only rows without a target and are therefore larger in 2022 and 2023 than the Somalia persistence rows of Table 5.13)
+
+All three configurations under transfer are scored on the same Somali rows, so the increments within Table 5.14 are like-for-like. The biophysical-only configuration scored 0.290 (XGBoost) and 0.303 (LightGBM) in 2021, close to the no-skill reference given by Somalia's 2021 prevalence of 0.279; it scored higher in 2022 and 2023, when prevalence was also much higher. The phase-history-only configuration scored close to the full configuration throughout. The increment from biophysical predictors over phase history, which in-pool was largest in 2021, was approximately zero on Somalia in 2021 — +0.002 for XGBoost and −0.005 for LightGBM. In 2022 and 2023 the transferred increment was +0.034 to +0.040, similar to or larger than the corresponding in-pool values. The two models agree on this pattern. These outcomes were assessed against expectations pre-registered before the transfer runs (Section 4.12). The increment for the in-pool models evaluated on Somalia's rows alone, which would separate the effect of transfer from the effect of the Somali context, was not computed; it is set out as future work in Section 7.5.
+5.6.3  Conflict features under transfer
+Table 5.15 — Conflict ablation under transfer to Somalia at h = 3 (separate run on the conflict-joined panel).
+Model	Window	B (this run)	D — B with conflict	D − B, PR-AUC	D − B, ROC-AUC	n
+XGBoost	2021	0.556	0.529	−0.027	−0.005	2,376
+	2022	0.882	0.871	−0.012	−0.018	1,782
+	2023	0.876	0.878	+0.002	+0.011	1,782
+LightGBM	2021	0.557	0.525	−0.032	−0.012	2,376
+	2022	0.874	0.864	−0.010	−0.018	1,782
+	2023	0.874	0.818	−0.056	−0.054	1,782
+Note. This run retains rows without a persistence input, so in 2022 and 2023 its row-set is larger than the Somalia persistence rows of Table 5.13 and identical to the full transfer row-set of Table 5.14. The configuration-B PR-AUC differs between the main ablation (0.917 in 2023) and this run (0.876) because the conflict-run pipeline imputes all predictor missing values to zero before training, whereas the main pipeline passes missing values to the gradient-boosting model's native handling; the two are separately trained models on identical test rows, and the native-handling value of Tables 5.13 and 5.14 is the canonical one. D is compared only with the B of its own run.
+
+Adding conflict features did not recover the 2021 increment on Somalia: transferred PR-AUC fell by 0.027 for XGBoost and 0.032 for LightGBM relative to the configuration without conflict. Across the six transfer cells the change in PR-AUC ranged from −0.056 (LightGBM, 2023) to +0.002 (XGBoost, 2023) and was negative in five of the six; ROC-AUC moved in the same direction in every cell. At the 2022 crisis peak the Brier score was also worse with conflict features (0.253 against 0.191 for XGBoost; 0.254 against 0.201 for LightGBM). In-pool, the changes lay within ±0.01 with no consistent sign (Table 5.9). Both outcomes were pre-registered as reportable before the arm was run (Section 4.12). The result is specific to the conflict encoding of Section 3.7.6.
+5.6.4  Uncertainty calibration under transfer
+Table 5.16 — Coverage of the nominal 80% interval at h = 3 under transfer to Somalia (LightGBM quantile regression; conformal calibration on Kenya and Ethiopia only).
+Window	In-pool, split-conformal (Table 5.12)	Transferred, split-conformal	Transferred, recency-weighted	Difference, transferred − in-pool	n (transferred)
+2021	0.761	0.704	0.704	−0.057	594
+2022	0.684	0.548	0.596	−0.136	396
+2023	0.842	0.856	0.859	+0.014	396
+Note. Coverage under transfer is assessed on Somali rows whose target month carries an observed assessment; these rows are fewer than the PR-AUC rows of Table 5.13.
+
+With conformal calibration performed on Kenya and Ethiopia and applied to Somalia, coverage of the nominal 80% interval was 0.704 in 2021, 0.548 at the 2022 crisis peak, and 0.856 in 2023. Coverage under transfer was below the in-pool value in 2021 (by 0.057) and 2022 (by 0.136), and slightly above it in 2023. The largest shortfall — 0.252 below nominal — occurred at the crisis peak. Recency weighting raised coverage under transfer at the crisis peak to 0.596, still well short of nominal, and changed it little in the other two windows.
+5.6.5  The three axes of heterogeneity
+Table 5.17 draws the transferability results together along the three axes of the evaluation (Section 3.8). The evidence differs in kind: the first axis is documented by per-country measurements on the feature and label side, whereas the second and third are measured within the transfer evaluation.
+Table 5.17 — Evidence on the three axes of deployment heterogeneity.
+Axis	Evidence	Where measured	Result
+Data structure and quality	Reporting-unit encodings; unlabelled unit-months (Kenya 1.4%, Ethiopia 5.6%, Somalia 9.7%); lower-quality LST retrieval fraction (Ethiopia 0.370, Kenya 0.507, Somalia 0.674); two missing Somali assessment rounds in 2022–2023, excluding half of Somalia's persistence rows in each of those windows	Per-country feature- and label-side measurements (Chapter 3; Section 5.1)	Somalia at the severe end of both measured gradients; not isolated as a component of transfer error
+Conflict-driven distribution shift	B − C on Somalia; conflict ablation arm under transfer	Transfer evaluation (Sections 5.6.2–5.6.3)	Biophysical increment ≈0 in 2021 on Somalia (+0.002 / −0.005) against +0.117 / +0.100 in-pool; not recovered by adding conflict features
+Uncertainty calibration under transfer	Conformal coverage on Somalia	Transfer evaluation (Section 5.6.4)	Coverage 0.548 at the 2022 crisis peak, against 0.684 in-pool and 0.80 nominal
+
+5.7  Summary of results
+Table 5.18 lists the principal results and where they are reported. Their interpretation, and their implications for the contributions of the study, follow in Chapter 6.
+Table 5.18 — Summary of principal results.
+Result	Section
+Phase 3+ prevalence roughly doubled from 2021 to 2022 in the observed assessments of all three countries and remained elevated in 2023 in Kenya and Somalia; the forward fill neither created nor materially changed the elevation	5.1
+Evaluation-row exclusions come from missing assessment rounds: Ethiopia in 2021, Somalia in 2022 and 2023, where half of Somalia's persistence rows are excluded	5.1
+The attention-based candidate trained stably but failed the discrimination criterion in every window and the calibration criterion at the 2022 crisis peak; LightGBM was adopted as the pre-registered fallback	5.2
+On identical rows, the FEWS NET projection exceeded persistence in every window at h = 3	5.3
+On identical rows, both gradient-boosting models exceeded persistence and the FEWS NET projection on PR-AUC and ROC-AUC at h = 3 in every window (XGBoost over the FEWS NET projection: +0.169 / +0.055 / +0.046); on the Brier score they were competitive rather than uniformly better	5.3
+The two gradient-boosting models were within 0.027 PR-AUC of each other on every row-set and in every window	5.3
+Biophysical predictors added PR-AUC over phase history in every window at h = 3, most in 2021 (+0.117 / +0.100); in 2021 the gain appeared on every metric, while the smaller gains of 2022–2023 appeared on PR-AUC but not on the Brier score	5.4
+Biophysical attribution share (40–57% at h = 3) ordered the windows as the ablation increment did, for both models	5.4
+Conflict features changed in-pool PR-AUC by less than 0.01, with no consistent sign	5.4
+No consistent difference in biophysical attribution between assistance strata; the comparison cannot separate assistance from severity	5.4
+Conformal calibration raised interval coverage in every cell but left it below nominal in 2021 and 2022; the largest shortfall was at the 2022 crisis peak (0.684); recency weighting reduced but did not close it	5.5
+Transferred to Somalia, both models exceeded Somalia's persistence baseline in every window and its FEWS NET projection in 2021 and 2023, but not at the 2022 crisis peak; the 2021 biophysical increment was ≈0; conflict features did not recover it and lowered PR-AUC in five of six cells; coverage fell to 0.548 at the crisis peak	5.6
+
+
+Appendix A — Specification of the attention-based candidate
+[Appendix block, supporting Section 5.2.]
+The attention-based candidate evaluated in the model-selection gate is a Temporal Fusion Transformer (Lim et al., 2021), implemented with the pytorch-forecasting library, version 1.8.0 (with PyTorch 2.13.0 and Lightning 2.6.5). Table A.1 gives its specification.
+Table A.1 — Specification of the attention-based candidate.
+Element	Setting
+Target	Ordinal IPC phase (1–5) at t + h
+Horizon evaluated	h = 3
+Encoder length	6 months, fixed in advance
+Loss	Quantile loss at the 10th, 50th, and 90th percentiles
+Scoring for PR-AUC	Continuous probability of Phase 3+, P(phase ≥ 3) = 1 − F(3), where F is a piecewise-linear predictive distribution through the three predicted quantiles, held flat beyond them
+Hidden size	32
+Attention heads	2
+Dropout	0.2
+Learning rate	0.03 (Adam optimiser)
+Training	Maximum 30 epochs; gradient clipping at 0.1; early stopping on training loss with patience 5; random seed 42
+Normalisation	Target normalised by reporting unit
+Static categorical inputs	Climate class and country
+Missing predictor values	Forward-filled within unit, with a fill indicator
+Evaluation rows	Identical to those of the gradient-boosting benchmark (Section 5.2)
+
+The candidate was built with specialist assistance, acknowledged in the front matter.

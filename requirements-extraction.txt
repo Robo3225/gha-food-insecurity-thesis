@@ -1,0 +1,22 @@
+# Additional packages imported by the extraction, crosswalk, data-fetch and
+# figure code (scripts/gee/, scripts/03_crosswalks/, scripts/06_feature_extraction/,
+# scripts/08_visualization/).
+#
+# DELIBERATELY UNPINNED. Appendix B.6 of the thesis states versions for the
+# modelling stack only (see requirements.txt); the versions of the packages
+# below were not recorded when the features were extracted and the figures
+# rendered. The package names are a verified fact about what the code imports.
+# The versions are not known, and inventing one here would assert a
+# reproducibility claim the thesis does not make.
+#
+# Install alongside requirements.txt only if you intend to re-run extraction
+# or re-render figures. The modelling results in the thesis reproduce from
+# requirements.txt and the frozen panels alone.
+
+earthengine-api
+geopandas
+rasterio
+scipy
+rapidfuzz
+requests
+matplotlib
